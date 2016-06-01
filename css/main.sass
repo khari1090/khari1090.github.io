@@ -42,9 +42,10 @@ body
   font-feature-settings: "liga", "dlig"
 
 .logo-readium
-  position: fixed
-  left: 10px
-  top: 10px
+  // position: fixed
+  vertical-align: middle
+  left: 0
+  top: 0
   width: $rs*3
   height: $rs*3
   background-color: #272727
@@ -53,8 +54,8 @@ body
   .logo
     display: block
     position: absolute
-    top: $rs/2
-    left: $rs/2
+    top: $rs
+    left: $rs
     width: $rs*2
     height: $rs*2
     background-size: cover
@@ -756,5 +757,7 @@ ul
 .search
   // border: 2px green solid
 
+
   a:hover
     border-bottom: none
+    transform: scale(2)
