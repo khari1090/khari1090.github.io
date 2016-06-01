@@ -839,38 +839,3 @@ pre {
   padding-top: 60px;
   line-height: 2em;
   padding: 0.75em 0.75em; }
-
-.nav {
-  border: 3px pink solid;
-  display: flex;
-  justify-content: center;
-  background: #272727;
-  padding: 20px;
-  width: 100%; }
-  .nav a {
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    font-weight: 700;
-    text-decoration: none;
-    color: white;
-    margin-left: 2em;
-    margin-right: 2em; }
-  .nav a:hover {
-    color: #778899; }
-
-.webster {
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 2em;
-  font-weight: 1000;
-  color: white;
-  margin-left: 2em; }
-
-.search {
-  flex: 1;
-  width: 500px;
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 25px; }
-  .search text {
-    font-size: 36px; }
-  .search input {
-    width: 80%; }
