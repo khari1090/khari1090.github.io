@@ -877,7 +877,8 @@ pre {
       padding: 12px 30px; }
     .nav-down ul a {
       font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-      font-size: 20px;
+      font-size: 16px;
+      font-weight: 700;
       text-decoration: none;
       color: #333332;
       padding: 10px; }
@@ -934,6 +935,11 @@ pre {
   font-size: 14px;
   vertical-align: center; }
 
+.post-author {
+  color: black;
+  border: 2px black solid;
+  height: 30px; }
+
 .post-author-image {
   display: inline;
   width: 40px;
@@ -951,4 +957,5 @@ pre {
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
 .reading-time {
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
+  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: blue; }
