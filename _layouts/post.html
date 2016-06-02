@@ -46,13 +46,28 @@
         <br>
         <br>
         {% endif %}
+
+        <!-- TITLE/CONTENT -->
+
+
+
         <section class="post-content">
-          <div class="post-reading">
-            <span class="post-reading-time"></span> read
+          <div class="post-top" style="title-top">{{ page.title }}</h1></div>
+          <section class="top-meta">
+          <div class="post-author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
+          <div class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</div>
+          <div class="post-timestamp"<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time></div>
+          </section>
+          <div class="post-reading-time">
+            <span class="reading-time"></span> read
           </div>
           <a name="topofpage"></a>
           {{content}}
         </section>
+
+
+
+        <!-- FOOTER -->
         <footer class="post-footer">
           <section class="share">
             {% for social in site.social %}
