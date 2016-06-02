@@ -55,7 +55,7 @@ body
     position: absolute
     top: $rs
     left: $rs
-    width: 70px
+    width: 60px
     height: 50px
     margin-left: 5px
     // background-size: cover
@@ -181,11 +181,23 @@ body
 .post-template .content
   max-width: 700px
 
+.index-post
+  border-top: 1px solid #dededc
+  margin-right: 10%
+  padding: 16px 0
+
+  span
+    color: #b3b3b1
+    font-size: $rs/8*5
+    text-transform: uppercase
+    letter-spacing: 1px
+
 .index-headline
   border-top: 1px solid #dededc
   margin-left: 10%
   margin-right: 10%
   padding: 16px 0
+
   span
     color: #b3b3b1
     font-size: $rs/8*5
@@ -208,12 +220,13 @@ body
 
 .post-reading
   position: absolute
-  top: 10px
+  top: 100px
   right: 30px
   line-height: 44px
   display: inline-block
   white-space: nowrap
   color: rgba(0,0,0,0.25)
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.25)
   font-size: 14px
   letter-spacing: -0.02em
   font-weight: 400
@@ -248,6 +261,7 @@ body
     bottom: 0
     margin: 0 auto
     overflow: hidden
+    height: 70%
     @media(min-width: 700px)
       .post-image-image
         background-size: cover
@@ -366,7 +380,7 @@ body
       white-space: nowrap
       text-overflow: ellipsis
   .post-content
-    width: 60%
+    width: 65%
     margin: 0 auto
     font-family: $font-serif
     color: #333
@@ -475,6 +489,7 @@ body
         padding-bottom: $rs*2
       .index-headline
         padding-bottom: 32px
+        align-items: center
       a
         color: #000
         text-decoration: none
