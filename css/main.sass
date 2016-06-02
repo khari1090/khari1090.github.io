@@ -717,23 +717,22 @@ pre
   padding-top: 60px
   line-height: 2em
   padding: (1.5em / 2) (1.5em / 2)
+  top: -50
 
 
 // nav begin
 
-.nav
+.nav-down
   // border: 4px orange solid
+  transition: top 0.2s ease-in-out
+  background-color: #272727
   overflow: hidden
   opacity: 0.9
   position: fixed
   z-index: 2
   width: 100%
   margin: 0 auto
-  background-color: #272727
-
-.nav-up
-  transition: top 0.2s ease-in-out
-  top: -5px
+  top: 0
 
   ul
     // border: 2px turquoise solid
@@ -749,13 +748,51 @@ pre
     li
       padding: 12px 20px
 
-      a
-        font-family: $font-sans
-        font-size: 20px
-        text-decoration: none
-        text-transform: uppercase
-        color: white
-        padding: 10px
+    a
+      font-family: $font-sans
+      font-size: 20px
+      text-decoration: none
+      text-transform: uppercase
+      color: white
+      padding: 10px
+
+      a:hover
+        border-bottom: 2px white solid
+
+
+.nav-up
+  transition: top 0.2s ease-in-out
+  background-color: #272727
+  overflow: hidden
+  opacity: 0.9
+  position: fixed
+  z-index: 2
+  width: 100%
+  margin: 0 auto
+  top: -70px
+
+
+  ul
+    // border: 2px turquoise solid
+    cursor: pointer
+    list-style-type: none
+    vertical-align: middle
+    margin: 0 auto
+    padding: 0 auto
+    float: right
+    display: flex
+    align-items: center
+
+    li
+      padding: 12px 20px
+
+    a
+      font-family: $font-sans
+      font-size: 20px
+      text-decoration: none
+      text-transform: uppercase
+      color: white
+      padding: 10px
 
       a:hover
         border-bottom: 2px white solid

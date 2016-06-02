@@ -838,20 +838,50 @@ pre {
   border-color: #DDE4E8;
   padding-top: 60px;
   line-height: 2em;
-  padding: 0.75em 0.75em; }
+  padding: 0.75em 0.75em;
+  top: -50; }
 
-.nav {
+.nav-down {
+  transition: top 0.2s ease-in-out;
+  background-color: #272727;
   overflow: hidden;
   opacity: 0.9;
   position: fixed;
   z-index: 2;
   width: 100%;
   margin: 0 auto;
-  background-color: #272727; }
+  top: 0; }
+  .nav-down ul {
+    cursor: pointer;
+    list-style-type: none;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 0 auto;
+    float: right;
+    display: flex;
+    align-items: center; }
+    .nav-down ul li {
+      padding: 12px 20px; }
+    .nav-down ul a {
+      font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      padding: 10px; }
+      .nav-down ul a a:hover {
+        border-bottom: 2px white solid; }
 
 .nav-up {
   transition: top 0.2s ease-in-out;
-  top: -5px; }
+  background-color: #272727;
+  overflow: hidden;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  top: -70px; }
   .nav-up ul {
     cursor: pointer;
     list-style-type: none;
@@ -863,14 +893,14 @@ pre {
     align-items: center; }
     .nav-up ul li {
       padding: 12px 20px; }
-      .nav-up ul li a {
-        font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        padding: 10px; }
-      .nav-up ul li a:hover {
+    .nav-up ul a {
+      font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      padding: 10px; }
+      .nav-up ul a a:hover {
         border-bottom: 2px white solid; }
 
 .search a:hover {
