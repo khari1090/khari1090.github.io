@@ -165,9 +165,8 @@ body {
   vertical-align: middle;
   left: 0;
   top: 0;
-  width: 48px;
-  height: 48px;
-  background-color: #272727;
+  width: 64px;
+  height: 50px;
   overflow: hidden;
   z-index: 99; }
   .logo-readium .logo {
@@ -175,9 +174,9 @@ body {
     position: absolute;
     top: 16px;
     left: 16px;
-    width: 32px;
-    height: 32px;
-    background-size: cover;
+    width: 70px;
+    height: 50px;
+    margin-left: 5px;
     background-repeat: no-repeat; }
 
 .teaserimage {
@@ -202,6 +201,7 @@ body {
   margin: 0 auto;
   position: relative;
   padding: 0;
+  padding-top: 50px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -842,39 +842,40 @@ pre {
   top: -50; }
 
 .nav-down {
-  transition: top 0.2s ease-in-out;
-  background-color: #272727;
+  transition: top 0.05s ease-in-out;
+  background-color: #fbfcfd;
   overflow: hidden;
   opacity: 0.9;
   position: fixed;
   z-index: 2;
   width: 100%;
   margin: 0 auto;
+  padding-right: 30%;
   top: 0; }
   .nav-down ul {
     cursor: pointer;
     list-style-type: none;
     vertical-align: middle;
     margin: 0 auto;
+    margin-right: 20px;
     padding: 0 auto;
     float: right;
     display: flex;
     align-items: center; }
     .nav-down ul li {
-      padding: 12px 20px; }
+      padding: 12px 30px; }
     .nav-down ul a {
       font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
       font-size: 20px;
       text-decoration: none;
-      text-transform: uppercase;
-      color: white;
+      color: #333332;
       padding: 10px; }
       .nav-down ul a a:hover {
-        border-bottom: 2px white solid; }
+        border-bottom: 2px #333332 solid; }
 
 .nav-up {
-  transition: top 0.2s ease-in-out;
-  background-color: #272727;
+  transition: top 0.1s ease-in-out;
+  background-color: #fbfcfd;
   overflow: hidden;
   opacity: 0.9;
   position: fixed;
@@ -887,21 +888,21 @@ pre {
     list-style-type: none;
     vertical-align: middle;
     margin: 0 auto;
+    margin-right: 20px;
     padding: 0 auto;
     float: right;
     display: flex;
     align-items: center; }
     .nav-up ul li {
-      padding: 12px 20px; }
+      padding: 12px 30px; }
     .nav-up ul a {
       font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
       font-size: 20px;
       text-decoration: none;
-      text-transform: uppercase;
-      color: white;
+      color: #333332;
       padding: 10px; }
       .nav-up ul a a:hover {
-        border-bottom: 2px white solid; }
+        border-bottom: 2px #333332 solid; }
 
 .search a:hover {
   border-bottom: none;
