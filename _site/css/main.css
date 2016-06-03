@@ -384,7 +384,7 @@ body {
   bottom: 0;
   margin: 0 auto;
   overflow: hidden;
-  height: 60%; }
+  height: 700px; }
 @media(min-width: 700px) {
   .post .article-image .post-image-image {
     background-size: cover;
@@ -948,10 +948,6 @@ pre {
       padding: 10px; }
       .nav-up ul a a:hover {
         border-bottom: 2px #333332 solid; }
-
-.search a:hover {
-  border-bottom: none;
-  transform: scale(2); }
 
 .post-top {
   font-size: 60px;
