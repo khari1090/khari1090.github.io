@@ -140,11 +140,10 @@ body
   @include box-sizing(border-box)
   @include respond-to(800)
     padding: 0 $rs*2
-    @media(max-width: 700px)
+    @media(max-width: 800px)
       padding: 0 auto
       margin: 0 auto
-      margin-left: -10%
-      width: 120%
+      width: 100%
   article
     padding: 40px 0
     border-bottom: 1px solid #f2f2f0
@@ -277,17 +276,18 @@ body
         text-indent: -9999px
         padding-top: 33%
         z-index: 1
+        margin: 0 auto
       .article-image
         background-size: cover
         margin: 0 auto
-        position: fixed
+        position: absolute
         height: 20%
-        position: relative
         top: 0
         left: 0
         right: 0
         bottom: 0
         text-indent: -9999px
+        overflow: hidden
       .post-image-image2
         display: none
     @media(max-width: 700px)
@@ -301,8 +301,10 @@ body
         text-indent: -9999px
         padding-top: 33%
         z-index: 1
+        overflow: hide
+        margin: 0 auto
       .article-image
-        background-size: auto
+        background-size: cover
         margin: 0 auto
         position: absolute
         height: 20%
@@ -781,6 +783,7 @@ pre
   padding-right: 30%
   top: 0
 
+
   ul
     // border: 2px turquoise solid
     cursor: pointer
@@ -795,6 +798,8 @@ pre
 
     li
       padding: 12px 30px
+      @media(max-width: 700px)
+        padding: 12px 10px
 
     a
       font-family: $font-sans
@@ -838,7 +843,8 @@ pre
 
     a
       font-family: $font-sans
-      font-size: 20px
+      font-size: 16px
+      font-weight: 700
       text-decoration: none
       color: #333332
       padding: 10px
@@ -863,7 +869,6 @@ pre
   font-weight: 700
   @media(max-width: 700px)
     font-size: 45px
-  @media(max-width: )
 
 .top-meta
   font-family: $font-sans
@@ -905,38 +910,3 @@ pre
   font-weight: 700
   display: inline
   font-family: $font-sans
-
-  // .post-meta
-  //   font-family: $font-sans
-  //   padding-top: 60px
-  // .post-title
-  //   font-weight: 700
-  //   font-style: normal
-  //   letter-spacing: -0.04em
-  //   font-size: 50px
-  //   line-height: 1.1
-  //   color: #333332
-  //   margin-bottom: 16px
-  // .author-image
-  //   display: inline-block
-  //   width: 30px
-  //   height: 30px
-  //   line-height: 30px
-  //   margin-right: 8px
-  //   margin-bottom: -10px
-  //   float: left
-  //   background-size: cover
-  //   border-radius: 100%
-  //   text-indent: -9999px
-  // .author-name
-  //   display: inline
-  // .post-meta-text
-  //   color: #b3b3b1
-  //   letter-spacing: -0.02em
-  //   font-weight: 400
-  //   font-style: normal
-  //   font-size: 14px
-  //   overflow: hidden
-  //   font-family: $font-sans
-  //   white-space: nowrap
-  //   text-overflow: ellipsis

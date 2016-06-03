@@ -263,12 +263,11 @@ body {
   @media only screen and (max-width: 800px) {
     .content {
       padding: 0 32px; }
-    @media(max-width: 700px) {
+    @media(max-width: 800px) {
       .content {
         padding: 0 auto;
         margin: 0 auto;
-        margin-left: -10%;
-        width: 120%; } } }
+        width: 100%; } } }
   .content article {
     padding: 40px 0;
     border-bottom: 1px solid #f2f2f0; }
@@ -396,18 +395,19 @@ body {
     bottom: 0;
     text-indent: -9999px;
     padding-top: 33%;
-    z-index: 1; }
+    z-index: 1;
+    margin: 0 auto; }
   .post .article-image .article-image {
     background-size: cover;
     margin: 0 auto;
-    position: fixed;
+    position: absolute;
     height: 20%;
-    position: relative;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    text-indent: -9999px; }
+    text-indent: -9999px;
+    overflow: hidden; }
   .post .article-image .post-image-image2 {
     display: none; } }
 @media(max-width: 700px) {
@@ -420,9 +420,11 @@ body {
     bottom: 0;
     text-indent: -9999px;
     padding-top: 33%;
-    z-index: 1; }
+    z-index: 1;
+    overflow: hide;
+    margin: 0 auto; }
   .post .article-image .article-image {
-    background-size: auto;
+    background-size: cover;
     margin: 0 auto;
     position: absolute;
     height: 20%;
@@ -902,6 +904,9 @@ pre {
     align-items: center; }
     .nav-down ul li {
       padding: 12px 30px; }
+@media(max-width: 700px) {
+  .nav-down ul li {
+    padding: 12px 10px; } }
     .nav-down ul a {
       font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
       font-size: 16px;
@@ -936,7 +941,8 @@ pre {
       padding: 12px 30px; }
     .nav-up ul a {
       font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-      font-size: 20px;
+      font-size: 16px;
+      font-weight: 700;
       text-decoration: none;
       color: #333332;
       padding: 10px; }
@@ -950,8 +956,7 @@ pre {
 .post-top {
   font-size: 60px;
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  @media(max-width: ); }
+  font-weight: 700; }
 @media(max-width: 700px) {
   .post-top {
     font-size: 45px; } }
