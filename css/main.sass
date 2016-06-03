@@ -27,7 +27,6 @@ main
   display: block
 
 
-
 body
   font-family: $font-sans
   margin: 0
@@ -141,6 +140,11 @@ body
   @include box-sizing(border-box)
   @include respond-to(800)
     padding: 0 $rs*2
+    @media(max-width: 700px)
+      padding: 0 auto
+      margin: 0 auto
+      margin-left: -10%
+      width: 120%
   article
     padding: 40px 0
     border-bottom: 1px solid #f2f2f0
@@ -175,6 +179,7 @@ body
         text-decoration: none
         &:hover
           text-decoration: underline
+
 .container.featured
   padding-bottom: 40px
 
@@ -272,12 +277,21 @@ body
         text-indent: -9999px
         padding-top: 33%
         z-index: 1
+      .article-image
+        background-size: cover
+        margin: 0 auto
+        position: fixed
+        height: 20%
+        position: relative
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        text-indent: -9999px
       .post-image-image2
         display: none
     @media(max-width: 700px)
       .post-image-image
-        display: none
-      .post-image-image2
         background-size: cover
         position: absolute
         top: 0
@@ -287,6 +301,18 @@ body
         text-indent: -9999px
         padding-top: 33%
         z-index: 1
+      .article-image
+        background-size: auto
+        margin: 0 auto
+        position: absolute
+        height: 20%
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        text-indent: -9999px
+      .post-image-image2
+        display: none
     .post-meta
       position: absolute
       bottom: $rs*5
@@ -470,6 +496,8 @@ body
         padding: 0 0 golden-ratio(1rem,  1)
     ol li
       list-style-type: decimal
+
+// under content
 
 .bottom-teaser
   padding: 50px 0
@@ -833,8 +861,9 @@ pre
   font-size: 60px
   font-family: $font-sans
   font-weight: 700
-  // @media(min-width: 700px)
-  //   font-size: 30px
+  @media(max-width: 700px)
+    font-size: 45px
+  @media(max-width: )
 
 .top-meta
   font-family: $font-sans
@@ -870,9 +899,14 @@ pre
   font-weight: 700
   font-family: $font-sans
 
-.reading-time
-  font-family: $font-sans
-  color: blue
+  a
+    font-family: $font-sans
+    display: flex
+    color: blue
+
+// .reading-time
+//   font-family: $font-sans
+//   color: blue
 
   // .post-meta
   //   font-family: $font-sans

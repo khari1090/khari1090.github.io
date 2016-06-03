@@ -24,9 +24,9 @@
               <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
               , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}
             </div> -->
-            <div style="text-align:center">
+            <!-- <div style="text-align:center">
               <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
-            </div>
+            </div> -->
           </div>
         </div>
         {% else %}
@@ -58,12 +58,10 @@
           <!-- <div class="post-author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div> -->
           <div class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</div>
           <div class="post-timestamp"<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time></div>
-          <div class="post-reading-time">
-            <span class="reading-time"></span> read
+          <div class="post-reading-time"> read
+            <span class="reading-time"></span>read
           </div>
           </section>
-
-          <a name="topofpage"></a>
           {{content}}
         </section>
 
