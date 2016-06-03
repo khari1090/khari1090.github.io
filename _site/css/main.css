@@ -384,7 +384,7 @@ body {
   bottom: 0;
   margin: 0 auto;
   overflow: hidden;
-  height: 700px; }
+  height: 600px; }
 @media(min-width: 700px) {
   .post .article-image .post-image-image {
     background-size: cover;
@@ -401,7 +401,6 @@ body {
     background-size: cover;
     margin: 0 auto;
     position: absolute;
-    height: 20%;
     top: 0;
     left: 0;
     right: 0;
@@ -415,24 +414,23 @@ body {
     background-size: cover;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -180px;
     right: 0;
     bottom: 0;
     text-indent: -9999px;
     padding-top: 33%;
-    z-index: 1;
-    overflow: hide;
     margin: 0 auto; }
   .post .article-image .article-image {
-    background-size: cover;
+    background-size: auto;
     margin: 0 auto;
     position: absolute;
-    height: 20%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    text-indent: -9999px; }
+    text-indent: -9999px;
+    height: 200px;
+    margin-left: -100px; }
   .post .article-image .post-image-image2 {
     display: none; } }
   .post .article-image .post-meta {
