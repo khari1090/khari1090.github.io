@@ -58,10 +58,12 @@
           <!-- <div class="post-author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div> -->
           <div class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</div>
           <div class="post-timestamp"<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time></div>
-          <div class="post-reading-time"> read
-            <span class="reading-time"></span>read
+          <div class="post-reading-time">
+            <!-- <span class="reading-time"></span> -->
           </div>
+          <div class="reading-time">read</div>
           </section>
+
           {{content}}
         </section>
 

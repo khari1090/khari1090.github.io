@@ -961,8 +961,8 @@ pre {
 
 .post-timestamp {
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  display: inline;
-  font-size: 14px;
+  display: block;
+  font-size: 16px;
   vertical-align: center; }
 
 .post-author {
@@ -983,9 +983,13 @@ pre {
   text-indent: -9999px; }
 
 .post-reading-time {
+  font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  display: inline; }
+
+.reading-time {
+  font-size: 14px;
+  font-weight: 700;
+  display: inline;
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
-  .post-reading-time a {
-    font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-    display: flex;
-    color: blue; }
