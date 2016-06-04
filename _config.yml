@@ -4,18 +4,18 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Webster Blog"
+title: LYNGO
 description: > # this means to ignore newlines until "email:"
    The best way to learn a new language!
 
 email: a-mail@mail.mail
 #blog logo
-logo: "/assets/images/w-icon.png"
+logo: "/assets/images/lyngo-icon.png"
 # blog cover
-cover: "/assets/images/webster-tile.png"
+cover: "/assets/images/lyngo-footer.png"
 
-name: 'Webster Team'
-author: 'Webster Team'
+name: 'Lyngo Team'
+author: 'Lyngo Team'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
