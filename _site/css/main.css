@@ -1,6 +1,7 @@
 /**
  * Syntax highlighting styles
  */
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 .highlight {
   background: #fff; }
   .highlight .c {
@@ -195,6 +196,19 @@ body {
     z-index: 1;
     text-indent: -9999px; }
 
+.blog-title {
+  font-family: "Pacifico", cursive;
+  margin: 10px;
+  padding: 84px 16px 8px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  outline: 0;
+  line-height: 50px;
+  word-break: break-word;
+  color: #333; }
+
 .blog-header {
   width: 100%;
   max-width: 640px;
@@ -224,18 +238,8 @@ body {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-  .blog-header .blog-title {
-    margin: 0;
-    padding: 84px 16px 8px;
-    font-size: 50px;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: -2px;
-    outline: 0;
-    line-height: 50px;
-    word-break: break-word;
-    color: #333; }
   .blog-header .blog-description {
+    font-style: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
     margin: 0 0 20px;
     padding: 0 32px;
     font-size: 18px;
@@ -737,11 +741,11 @@ body {
     margin: 0 auto; }
     .bottom-closer .inner .blog-title {
       margin: 0;
-      padding: 0 0 10px;
+      padding: 0 0 20px;
       font-size: 50px;
       text-align: center;
       font-weight: 700;
-      letter-spacing: -2px;
+      letter-spacing: 2px;
       outline: 0;
       line-height: 50px;
       word-break: break-word;
@@ -767,13 +771,13 @@ body {
       cursor: pointer;
       height: 44px;
       background: #FFEC00;
-      border: #231F20 3px solid;
-      color: #231F20;
+      color: #333;
       vertical-align: middle;
       box-sizing: border-box;
-      border-radius: 1em;
+      border-radius: 2px;
       line-height: 40px;
-      padding: 0px 18px; }
+      padding: 0px 18px;
+      box-shadow: 0 2px 0 #D9E1E7; }
 
 #disqus_thread {
   margin-top: 50px; }
@@ -814,13 +818,12 @@ pre {
 .card {
   background-color: #fbfcfd;
   border-radius: 2px;
-  box-shadow: 0 0px 1px #e6e6e6;
+  box-shadow: 0 2px 0 #D9E1E7;
   cursor: pointer;
   margin: 1em;
   position: relative;
   height: 500px;
   width: 320px;
-  box-shadow: 0 2px 0 #D9E1E7;
   flex-shrink: 0.5; }
 
 .card-image {
