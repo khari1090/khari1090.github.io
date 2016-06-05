@@ -43,7 +43,9 @@
   <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
   <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
 
+<!-- fullPage -->
 
+  <!-- <link rel="stylesheet" type="text/css" href="/css/jquery.fullPage.css" /> -->
 
 </head>
 
@@ -56,7 +58,7 @@
     <ul>
       <!-- <a href="http://myblog.***.***" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/lyngo-icon.png)"></span></a> -->
       <a href="/" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/lyngo-icon.png)"></span></a>
-      <li><a href="#">One</a></li>
+      <li><a href="/blog">Blog</a></li>
       <li><a href="#">Two</a></li>
       <li><a href="#">Three</a></li>
       <!-- <div class="search">
@@ -217,6 +219,12 @@
 <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="/assets/js/index.js"></script>
 <script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
+
+<!-- fullPage -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.fullPage.js"></script>
+
+
 <script>
 (function ($) {
   "use strict";
@@ -297,6 +305,18 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 </script>
+
+<!-- fullPage -->
+
+<!-- <script>
+
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors:['firstPage', 'secondPage', 'thirdPage']
+    });
+});
+
+</script> -->
 
   </body>
 </html>
