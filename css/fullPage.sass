@@ -3,7 +3,7 @@
 
 @import 'bourbon/bourbon'
 
-@import url(https://fonts.googleapis.com/css?family=Pacifico)
+@import url(https://fonts.googleapis.com/css?family=Varela+Round)
 
 .cf
   @include clearfix
@@ -13,18 +13,14 @@ $rs: 16px
 $font-serif: Linux Libertine
 $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif
 $font-merriweather: Merriweather
-$font-lyngo: 'Pacifico', cursive
+$font-varela: 'Varela Round', sans-serif
 
 @mixin respond-to($breakpoint)
   @media only screen and (max-width: $breakpoint + px)
     @content
 
 body
-  slidesNavigation: true
-  font-family: $font-sans
-  margin: 500px
-  padding: 0
-  background-color: #EAF0F4
+  font-family: $font-varela
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
   -moz-font-feature-settings: "liga=1, dlig=1"
@@ -33,28 +29,59 @@ body
   -o-font-feature-settings: "liga", "dlig"
   font-feature-settings: "liga", "dlig"
 
-.main
-  padding-left: 100px
-  // border: 1px solid black
+.fullpage
+  display: block
+
+.head
+  width: 50%
+  margin: 0 auto
+  display: block
 
 
-.section0 img,
-.section1 img
-  margin: 20px 0 0 0
 
-.section2 img
-  margin: 20px 0 0 52px
+.center
+  // border: 1px solid pink
+  width: 70%
+  margin: 0 auto
+  position: relative
 
-.section3 img
-  bottom: 0px
-  position: absolute
-  margin-left: -420px
-
-.intro
+  h1
+    // border: 1px solid black
+    font-size: 80px
+    margin: 0 auto
+    text-align: center
+    color: white
+    @media(max-width: 700px)
+      font-size: 40px
+  h2
+    font-size: 30px
+    margin: 0 auto
+    text-align: center
+    color: white
+  img
+    // border: 1px solid red
+    width: 100%
+    margin: 0 auto
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    position: relative
+    // position: absolute
   p
-    width: 50%
+    // border: 1px solid blue
     margin: 0 auto
     font-size: 1.5em
+    text-align: center
+
+.column
+  width: 70%
+  margin: 0 auto
+
+  h1
+    color: white
+
+
 
 .twitter-share-button
   position: absolute

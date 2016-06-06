@@ -31,10 +31,14 @@
   	<script type="text/javascript">
   		$(document).ready(function() {
   			$('#fullpage').fullpage({
-  				sectionsColor: ['#FFF78E', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-  				 anchors: ['start-info', 'about-info', 'service-info', 'actual-info', 'contact-info'],
+  				sectionsColor: ['#FBD335', '#3FA7D6', '#EE6352'],
+  				anchors: ['Welcome', 'service-info', 'actual-info', 'contact-info'],
   				menu: '#menu',
-  				scrollingSpeed: 1000
+  				scrollingSpeed: 1000,
+          slidesNavigation: true,
+          navigation: true,
+          // showActiveTooltip: true,
+          // navigationTooltips: ['firstSlide', 'secondSlide', 'thiedSlide', 'fourthSlide']
   			});
   		});
   	</script>
@@ -53,67 +57,35 @@
   </ul> -->
 
   <div id="fullpage">
+
   	<div class="section active" id="section0">
-      <div class="main">
-    		<h1>Welcome to Lyngo</h1>
-    		 <input type="hidden" name="id" value="1" />
-    		<p>Learn a new language while watching your favorite shows. It's that simple.</p>
-    		<img src="/assets/images/lyngo-browser.png" alt="lyngo-browser" />
-      </div>
-  	</div>
-
-  	<div class="section" id="section1">
-      <div class="main">
-  		<div class="slide">
-  			<div class="intro">
-  				<h1>Create Sliders</h1>
-  				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-  				<!-- <img src="imgs/slider.png" alt="slider" /> -->
-  			</div>
-  		</div>
-    </div>
-
-  		<div class="slide">
-  			<div class="intro">
-  				<!-- <img src="imgs/1.png" alt="simple" /> -->
-  				<h1>Simple</h1>
-  				<p>Easy to use. Configurable and customizable.</p>
-  			</div>
-  		</div>
-  		<div class="slide">
-  			<div class="intro">
-  				<!-- <img src="imgs/2.png" alt="Cool" /> -->
-  				<h1>Cool</h1>
-  				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
-  			</div>
-  		</div>
-  		<div class="slide">
-  			<div class="intro">
-  				<!-- <img src="imgs/3.png" alt="Compatible" /> -->
-  				<h1>Compatible</h1>
-  				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
-  			</div>
-  		</div>
+      <div class="head"></div>
+        <div class="center">
+          <h1>WELCOME TO LYNGO</h1>
+    		  <p>Learn a new language while watching your favorite shows. It's that simple.</p>
+    		  <img class="center" src="/assets/images/lyngo-browser.png" alt="lyngo-browser"/>
+          <h2>Get Notified Upon Release</h2>
+          {% include subscribe.html %}
+        </div>
   	</div>
 
   	<div class="section" id="section2">
-  		<div class="intro">
+  		<div class="column">
   			<h1>Example</h1>
   			<p>HTML markup example to define 4 sections.</p>
-  			<!-- <img src="imgs/example2.png" alt="example" /> -->
   		</div>
   	</div>
 
   	<div class="section" id="section3">
-  		<div class="intro">
-  			<h1>Working On Tablets</h1>
+  		<div class="column">
+  			<h1>Coming Soon</h1>
   			<p>
   				Designed to fit to different screen sizes as well as tablet and mobile devices.
   				<br /><br /><br /><br /><br /><br />
   			</p>
   		</div>
-  		<!-- <img src="imgs/tablets.png" alt="tablets" /> -->
   	</div>
+
   </div>
 
     <!-- content end -->

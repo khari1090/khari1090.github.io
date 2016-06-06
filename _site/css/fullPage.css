@@ -1,15 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 .cf:after {
   content: "";
   display: table;
   clear: both; }
 
 body {
-  slidesNavigation: true;
-  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  margin: 500px;
-  padding: 0;
-  background-color: #EAF0F4;
+  font-family: "Varela Round", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-font-feature-settings: "liga=1, dlig=1";
@@ -18,25 +14,49 @@ body {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig"; }
 
-.main {
-  padding-left: 100px; }
+.fullpage {
+  display: block; }
 
-.section0 img,
-.section1 img {
-  margin: 20px 0 0 0; }
-
-.section2 img {
-  margin: 20px 0 0 52px; }
-
-.section3 img {
-  bottom: 0px;
-  position: absolute;
-  margin-left: -420px; }
-
-.intro p {
+.head {
   width: 50%;
   margin: 0 auto;
-  font-size: 1.5em; }
+  display: block; }
+
+.center {
+  width: 70%;
+  margin: 0 auto;
+  position: relative; }
+  .center h1 {
+    font-size: 80px;
+    margin: 0 auto;
+    text-align: center;
+    color: white; }
+@media(max-width: 700px) {
+  .center h1 {
+    font-size: 40px; } }
+  .center h2 {
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: white; }
+  .center img {
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative; }
+  .center p {
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center; }
+
+.column {
+  width: 70%;
+  margin: 0 auto; }
+  .column h1 {
+    color: white; }
 
 .twitter-share-button {
   position: absolute;

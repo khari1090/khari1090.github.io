@@ -1,7 +1,7 @@
 /**
  * Syntax highlighting styles
  */
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 .highlight {
   background: #fff; }
   .highlight .c {
@@ -162,24 +162,6 @@ body {
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig"; }
 
-.logo-readium {
-  vertical-align: middle;
-  left: 0;
-  top: 0;
-  width: 64px;
-  height: 50px;
-  overflow: hidden;
-  z-index: 99; }
-  .logo-readium .logo {
-    display: block;
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    width: 60px;
-    height: 50px;
-    margin-left: 5px;
-    background-repeat: no-repeat; }
-
 .teaserimage {
   height: 350px;
   position: relative;
@@ -197,7 +179,7 @@ body {
     text-indent: -9999px; }
 
 .blog-title {
-  font-family: "Pacifico", cursive;
+  font-family: "Varela Round", sans-serif;
   margin: 10px;
   padding: 84px 16px 8px;
   font-size: 50px;
@@ -811,7 +793,7 @@ pre {
   justify-content: center;
   margin: 0 auto;
   position: sticky;
-  width: 90%;
+  width: 100%;
   padding-left: 4%;
   padding-right: 4%; }
 
@@ -823,7 +805,7 @@ pre {
   margin: 1em;
   position: relative;
   height: 500px;
-  width: 320px;
+  width: 300px;
   flex-shrink: 0.5; }
 
 .card-image {
@@ -854,6 +836,7 @@ pre {
 
 .card-copy {
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-decoration: none;
   font-size: 16px;
   color: #666665;
   line-height: 1.5em;
@@ -881,6 +864,15 @@ pre {
   padding: 0.75em 0.75em;
   top: -50; }
 
+.nav-logo {
+  position: absolute;
+  float: left;
+  left: 16px;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  font-size: 30px; }
+
 .nav-down {
   transition: top 0.05s ease-in-out;
   background-color: #fbfcfd;
@@ -891,34 +883,32 @@ pre {
   width: 100%;
   margin: 0 auto;
   padding-right: 30%;
-  top: 0; }
+  top: 0;
+  height: 70px; }
   .nav-down ul {
     cursor: pointer;
     list-style-type: none;
     vertical-align: middle;
     margin: 0 auto;
     margin-right: 20px;
-    padding: 0 auto;
     float: right;
     display: flex;
     align-items: center; }
     .nav-down ul li {
-      padding: 12px 30px; }
+      padding: 25px 30px; }
 @media(max-width: 700px) {
   .nav-down ul li {
-    padding: 12px 10px; } }
+    padding: 25px 10px; } }
     .nav-down ul a {
-      font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-family: "Varela Round", sans-serif;
       font-size: 16px;
       font-weight: 700;
       text-decoration: none;
       color: #333332;
       padding: 10px; }
-      .nav-down ul a a:hover {
-        border-bottom: 2px #333332 solid; }
 
 .nav-up {
-  transition: top 0.1s ease-in-out;
+  transition: top 0.05s ease-in-out;
   background-color: #fbfcfd;
   overflow: hidden;
   opacity: 0.9;
@@ -926,28 +916,30 @@ pre {
   z-index: 2;
   width: 100%;
   margin: 0 auto;
-  top: -70px; }
+  padding-right: 30%;
+  top: -70px;
+  height: 70px; }
   .nav-up ul {
     cursor: pointer;
     list-style-type: none;
     vertical-align: middle;
     margin: 0 auto;
     margin-right: 20px;
-    padding: 0 auto;
     float: right;
     display: flex;
     align-items: center; }
     .nav-up ul li {
-      padding: 12px 30px; }
+      padding: 25px 30px; }
+@media(max-width: 700px) {
+  .nav-up ul li {
+    padding: 12px 10px; } }
     .nav-up ul a {
-      font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-family: "Varela Round", sans-serif;
       font-size: 16px;
       font-weight: 700;
       text-decoration: none;
       color: #333332;
       padding: 10px; }
-      .nav-up ul a a:hover {
-        border-bottom: 2px #333332 solid; }
 
 .post-top {
   font-size: 60px;
@@ -1006,3 +998,8 @@ pre {
   .social-icons li {
     display: inline-block;
     padding-left: 0; }
+
+#mc_embed_signup #mc-embedded-subscribe-form .input-button {
+  background-color: #000; }
+#mc_embed_signup #mc-embedded-subscribe-form .mc-field-group {
+  height: 100px; }

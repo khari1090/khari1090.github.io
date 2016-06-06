@@ -5,7 +5,7 @@
 
 @import 'bourbon/bourbon'
 
-@import url(https://fonts.googleapis.com/css?family=Pacifico)
+@import url(https://fonts.googleapis.com/css?family=Varela+Round)
 
 .cf
   @include clearfix
@@ -15,7 +15,9 @@ $rs: 16px
 $font-serif: Linux Libertine
 $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif
 $font-merriweather: Merriweather
-$font-lyngo: 'Pacifico', cursive
+$font-lyngo: 'Varela Round', sans-serif
+
+
 
 
 @mixin respond-to($breakpoint)
@@ -42,26 +44,6 @@ body
   -webkit-font-feature-settings: "liga", "dlig"
   -o-font-feature-settings: "liga", "dlig"
   font-feature-settings: "liga", "dlig"
-
-.logo-readium
-  vertical-align: middle
-  left: 0
-  top: 0
-  width: $rs*4
-  height: 50px
-  // background-color: #272727
-  overflow: hidden
-  z-index: 99
-  .logo
-    display: block
-    position: absolute
-    top: $rs
-    left: $rs
-    width: 60px
-    height: 50px
-    margin-left: 5px
-    // background-size: cover
-    background-repeat: no-repeat
 
 .teaserimage
   height: 350px
@@ -696,10 +678,9 @@ pre
   margin: 0 auto
   position: sticky
   // border: 3px green solid
-  width: 90%
+  width: 100%
   padding-left: 4%
   padding-right: 4%
-  // max-width: 1200px
 
 
 .card
@@ -710,7 +691,7 @@ pre
   margin: 1em
   position: relative
   height: 500px
-  width: 320px
+  width: 300px
   flex-shrink: 0.5
 
 
@@ -747,6 +728,7 @@ pre
 
 .card-copy
   font-family: $font-sans
+  text-decoration: none
   font-size: 16px
   color: #666665
   line-height: 1.5em
@@ -779,6 +761,17 @@ pre
 
 // nav begin
 
+.nav-logo
+  // display: flex
+  position: absolute
+  float: left
+  left: $rs
+  margin: 0 auto
+  margin-top: 5px
+  background-repeat: no-repeat
+  font-size: 30px
+
+
 .nav-down
   // border: 4px orange solid
   transition: top 0.05s ease-in-out
@@ -791,6 +784,7 @@ pre
   margin: 0 auto
   padding-right: 30%
   top: 0
+  height: 70px
 
 
   ul
@@ -800,31 +794,28 @@ pre
     vertical-align: middle
     margin: 0 auto
     margin-right: 20px
-    padding: 0 auto
+    // padding: 0 auto
     float: right
     display: flex
     align-items: center
 
     li
-      padding: 12px 30px
+      padding: 25px 30px
       @media(max-width: 700px)
-        padding: 12px 10px
+        padding: 25px 10px
 
     a
-      font-family: $font-sans
+      font-family: $font-lyngo
       font-size: 16px
       font-weight: 700
       text-decoration: none
       color: #333332
       padding: 10px
 
-      a:hover
-        border-bottom: 2px #333332 solid
-
 
 .nav-up
-  // border: 4px green solid
-  transition: top 0.1s ease-in-out
+  // border: 4px orange solid
+  transition: top 0.05s ease-in-out
   background-color: lighten(#DDE4E8, 10%)
   overflow: hidden
   opacity: 0.9
@@ -832,8 +823,9 @@ pre
   z-index: 2
   width: 100%
   margin: 0 auto
+  padding-right: 30%
   top: -70px
-
+  height: 70px
 
   ul
     // border: 2px turquoise solid
@@ -842,24 +834,23 @@ pre
     vertical-align: middle
     margin: 0 auto
     margin-right: 20px
-    padding: 0 auto
+    // padding: 0 auto
     float: right
     display: flex
     align-items: center
 
     li
-      padding: 12px 30px
+      padding: 25px 30px
+      @media(max-width: 700px)
+        padding: 12px 10px
 
     a
-      font-family: $font-sans
+      font-family: $font-lyngo
       font-size: 16px
       font-weight: 700
       text-decoration: none
       color: #333332
       padding: 10px
-
-      a:hover
-        border-bottom: 2px #333332 solid
 
 
 //new post header
@@ -924,3 +915,12 @@ pre
   li
     display: inline-block
     padding-left: 0
+
+#mc_embed_signup
+  #mc-embedded-subscribe-form
+
+    .input-button
+      background-color: #000
+
+    .mc-field-group
+      height: 100px

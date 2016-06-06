@@ -73,8 +73,6 @@ html.fp-enabled,
     height: 0;
     border-style: solid;
     margin-top: -38px;
-    padding-left: 20px;
-    padding-right: 20px;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);

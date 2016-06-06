@@ -18,7 +18,8 @@ name: 'Lyngo Team'
 author: 'Lyngo Team'
 author_image: "/assets/images/author.jpg"
 
-paginate:	5
+paginate:	6
+paginate_path: "/blog/index.html"
 
 url: "http://myblog.***.***" # the base hostname & protocol for your site
 baseurl: ""
