@@ -13,14 +13,14 @@ $rs: 16px
 $font-serif: Linux Libertine
 $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif
 $font-merriweather: Merriweather
-$font-varela: 'Varela Round', sans-serif
+$font-lyngo: 'Varela Round', sans-serif
 
 @mixin respond-to($breakpoint)
   @media only screen and (max-width: $breakpoint + px)
     @content
 
 body
-  font-family: $font-varela
+  font-family: $font-lyngo
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
   -moz-font-feature-settings: "liga=1, dlig=1"
@@ -47,19 +47,25 @@ body
 
   h1
     // border: 1px solid black
-    font-size: 80px
+    font-size: 70px
     margin: 0 auto
     text-align: center
     color: white
+    padding: 10px
     @media(max-width: 700px)
       font-size: 40px
   h2
-    font-size: 30px
+    font-size: 40px
     margin: 0 auto
     text-align: center
-    color: white
+    color: #967800
+  p
+    color: #967800
+    margin: 0 auto
+    font-size: 24px
+    text-align: center
+    padding: 10px
   img
-    // border: 1px solid red
     width: 600px
     margin: 0 auto
     top: 0
@@ -68,18 +74,43 @@ body
     bottom: 0
     position: relative
     display: block
-  p
-    // border: 1px solid blue
-    margin: 0 auto
-    font-size: 1.5em
-    text-align: center
+
 
 .column
-  width: 70%
+  width: 89%
   margin: 0 auto
+  position: relative
+  align-items: left
 
+h1
+  color: white
+  text-align: center
+
+  p
+    color: #333
+    font-size: 24px
+    margin: 0 auto
+    font-size: 1.25em
+    text-align: center
+    padding: 10px
+
+.cta
+  width: 89%
+  margin: 0 auto
+  position: relative
+  align-items: left
+  p
+    color: #7D3027
+    font-size: 24px
+    margin: 0 auto
+    font-size: 1.25em
+    text-align: center
+    padding: 10px
   h1
     color: white
+    text-align: center
+
+
 
 
 
@@ -88,3 +119,63 @@ body
   z-index: 99
   right: 149px
   top: 9px
+
+// Mailchimp
+
+#mailchimp
+  margin: 0 auto
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  overflow: hidden
+  position: relative
+  width: 594px
+  padding: 40px
+  cursor: pointer
+
+// field input
+#mailchimp input
+  margin: 0 auto
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  border: medium none
+  font-family: $font-lyngo
+  font-size: 30px
+  padding: 25px
+  border-radius: 4px
+  color: #272F39
+
+// field
+#mailchimp input.email
+  display: inline-block
+  float: left
+  position: relative
+  margin: 0 auto
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin-bottom: 50px
+  @media(max-width: 700px)
+    vertical-align: middle
+    display: table-cell
+    position: relative
+
+// button
+#mailchimp input[type="submit"]
+  box-shadow: 0 2px 0 #009948
+  background: #59CD90
+  color: white
+  margin-left: 20px
+  overflow: hidden
+  cursor: pointer
+  &:hover
+    background: #3EBB7A
+  @media(max-width: 700px)
+    vertical-align: middle
+    display: table-cell
+    position: relative
+    float: left

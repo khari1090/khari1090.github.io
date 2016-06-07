@@ -27,18 +27,25 @@ body {
   margin: 0 auto;
   position: relative; }
   .center h1 {
-    font-size: 80px;
+    font-size: 70px;
     margin: 0 auto;
     text-align: center;
-    color: white; }
+    color: white;
+    padding: 10px; }
 @media(max-width: 700px) {
   .center h1 {
     font-size: 40px; } }
   .center h2 {
-    font-size: 30px;
+    font-size: 40px;
     margin: 0 auto;
     text-align: center;
-    color: white; }
+    color: #967800; }
+  .center p {
+    color: #967800;
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px; }
   .center img {
     width: 600px;
     margin: 0 auto;
@@ -48,19 +55,98 @@ body {
     bottom: 0;
     position: relative;
     display: block; }
-  .center p {
-    margin: 0 auto;
-    font-size: 1.5em;
-    text-align: center; }
 
 .column {
-  width: 70%;
-  margin: 0 auto; }
-  .column h1 {
-    color: white; }
+  width: 89%;
+  margin: 0 auto;
+  position: relative;
+  align-items: left; }
+
+h1 {
+  color: white;
+  text-align: center; }
+  h1 p {
+    color: #333;
+    font-size: 24px;
+    margin: 0 auto;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 10px; }
+
+.cta {
+  width: 89%;
+  margin: 0 auto;
+  position: relative;
+  align-items: left; }
+  .cta p {
+    color: #7D3027;
+    font-size: 24px;
+    margin: 0 auto;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 10px; }
+  .cta h1 {
+    color: white;
+    text-align: center; }
 
 .twitter-share-button {
   position: absolute;
   z-index: 99;
   right: 149px;
   top: 9px; }
+
+#mailchimp {
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: relative;
+  width: 594px;
+  padding: 40px;
+  cursor: pointer; }
+
+#mailchimp input {
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: medium none;
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+  padding: 25px;
+  border-radius: 4px;
+  color: #272F39; }
+
+#mailchimp input.email {
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 50px; }
+@media(max-width: 700px) {
+  #mailchimp input.email {
+    vertical-align: middle;
+    display: table-cell;
+    position: relative; } }
+#mailchimp input[type="submit"] {
+  box-shadow: 0 2px 0 #009948;
+  background: #59CD90;
+  color: white;
+  margin-left: 20px;
+  overflow: hidden;
+  cursor: pointer; }
+  #mailchimp input[type="submit"]:hover {
+    background: #3EBB7A; }
+@media(max-width: 700px) {
+  #mailchimp input[type="submit"] {
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    float: left; } }
