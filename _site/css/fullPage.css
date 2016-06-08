@@ -87,8 +87,26 @@ body {
       text-align: center;
       padding: 10px; }
     .column h2 a {
-      color: #005C85;
+      color: white;
       text-decoration: underline; }
+
+.snapchat {
+  width: 40%;
+  margin: 0 auto;
+  position: relative; }
+  .snapchat h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    color: #333;
+    font-weight: 400; }
+  .snapchat h2 {
+    font-size: 40px;
+    padding: 10px;
+    text-align: center; }
+  .snapchat img {
+    margin: 0 auto;
+    position: relative;
+    display: block; }
 
 .cta {
   width: 89%;
@@ -117,7 +135,6 @@ body {
   overflow: hidden;
   position: relative;
   width: 594px;
-  min-width: 40%;
   padding: 40px;
   cursor: pointer; }
 @media(max-width: 700px) {
