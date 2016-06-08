@@ -37,13 +37,14 @@ body
   margin: 0 auto
   display: block
 
-
-
 .center
   // border: 1px solid pink
-  width: 70%
+  width: 89%
   margin: 0 auto
   position: relative
+  @media(max-width: 600px)
+    align-items: center
+
 
   h1
     // border: 1px solid black
@@ -52,13 +53,16 @@ body
     text-align: center
     color: white
     padding: 10px
-    @media(max-width: 700px)
-      font-size: 40px
+    @media(max-width: 600px)
+      font-size: 50px
   h2
     font-size: 40px
     margin: 0 auto
     text-align: center
     color: #967800
+    @media(max-width: 600px)
+      font-size: 20px
+
   p
     color: #967800
     margin: 0 auto
@@ -74,25 +78,39 @@ body
     bottom: 0
     position: relative
     display: block
+    @media(max-width:700px)
+      width: 300px
 
 
 .column
   width: 89%
   margin: 0 auto
   position: relative
-  align-items: left
 
-h1
-  color: white
-  text-align: center
-
-  p
-    color: #333
-    font-size: 24px
-    margin: 0 auto
-    font-size: 1.25em
+  h1
+    color: white
     text-align: center
-    padding: 10px
+
+  h2
+    color: #005C85
+    position: relative
+    margin: 0 auto
+    font-size: 20px
+    text-align: center
+    padding-bottom: 25px
+    font-weight: 400
+
+    p
+      color: #333
+      font-size: 24px
+      margin: 0 auto
+      font-size: 1.25em
+      text-align: center
+      padding: 10px
+
+    a
+      color: #005C85
+      text-decoration: underline
 
 .cta
   width: 89%
@@ -112,8 +130,6 @@ h1
 
 
 
-
-
 .twitter-share-button
   position: absolute
   z-index: 99
@@ -123,16 +139,20 @@ h1
 // Mailchimp
 
 #mailchimp
+  // border: 1px solid black
   margin: 0 auto
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
   overflow: hidden
   position: relative
   width: 594px
+  min-width: 40%
   padding: 40px
   cursor: pointer
+  @media(max-width: 700px)
+    width: 80%
+    margin: 0 auto
+    display: relative
+    float: inherit
+    align-items: center
 
 // field input
 #mailchimp input
@@ -147,6 +167,10 @@ h1
   padding: 25px
   border-radius: 4px
   color: #272F39
+  @media(max-width: 800px)
+    font-size: 24px
+
+
 
 // field
 #mailchimp input.email
@@ -159,10 +183,16 @@ h1
   right: 0
   bottom: 0
   margin-bottom: 50px
-  @media(max-width: 700px)
+  @media(max-width: 800px)
+    margin-left: 0
+    margin-bottom: 20px
     vertical-align: middle
-    display: table-cell
+    align-items: center
     position: relative
+    width: 85%
+    display: flex
+    float: none
+
 
 // button
 #mailchimp input[type="submit"]
@@ -172,10 +202,12 @@ h1
   margin-left: 20px
   overflow: hidden
   cursor: pointer
+  float: right
   &:hover
     background: #3EBB7A
-  @media(max-width: 700px)
-    vertical-align: middle
-    display: table-cell
+  @media(max-width: 800px)
+    margin: 0 auto
+    align-items: center
     position: relative
-    float: left
+    display: flex
+    float: none

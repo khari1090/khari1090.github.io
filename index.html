@@ -63,10 +63,10 @@ layout: default
   	<div class="section active" id="section0">
       <div class="head"></div>
         <div class="center">
-          <h1>WELCOME TO LYNGO</h1>
+          <h1>Welcome to LYNGO</h1>
     		  <h2>Learn a new language while watching your favorite shows. It's that simple.</h2>
-    		  <img class="center" src="/assets/images/lyngo-browser.png" alt="lyngo-browser"/>
-          <p>Get Notified Upon Release</p>
+    		  <img class="center" src="/assets/images/lyngo-interface.png" alt="lyngo-browser"/>
+          <p>Get notified upon release!</p>
           {% include subscribe.html %}
         </div>
   	</div>
@@ -74,33 +74,34 @@ layout: default
       	<div class="section" id="section2">
   		<div class="column">
   			<h1>LATEST BLOG POSTS</h1>
+        <h2 class="column">We write articles about language learning. View more on our <a href="{{ site.baseurl }}/blog">blog</a>.</h2>
 
         <!-- Cards Start -->
 
-        <div class="cards">
-           {% for post in site.posts limit:3 %}
+          <div class="cards">
+             {% for post in site.posts limit:3 %}
 
-           <div class="card">
+             <div class="card">
 
-             <div class="card-image">
-               <div>
-                 <a href="{{post.url}}"><img src="{% if post.image %}{{ post.image }}{% endif %}"></a>
+               <div class="card-image">
+                 <div>
+                   <a href="{{post.url}}"><img src="{% if post.image %}{{ post.image }}{% endif %}"></a>
+                 </div>
                </div>
+
+               <div class="card-header">
+                 <a href="{{post.url}}" style="text-decoration: none; color: #333332">{{post.title}}</a>
+               </div>
+
+               <div class="card-copy">
+                 <p>{{ post.excerpt | strip_html | truncatewords: 16 }}</p>
+               </div>
+
+               <div class="card-meta">
+                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+              </div>
+
              </div>
-
-             <div class="card-header">
-               <a href="{{post.url}}" style="text-decoration: none; color: #333332">{{post.title}}</a>
-             </div>
-
-             <div class="card-copy">
-               <p>{{ post.excerpt | strip_html | truncatewords: 16 }}</p>
-             </div>
-
-             <div class="card-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-            </div>
-
-           </div>
 
            {% endfor %}
          </div>
@@ -113,7 +114,7 @@ layout: default
   	<div class="section" id="section3">
   		<div class="cta">
   			<h1>COMING SOON</h1>
-        <p class="cta">Make sure you're notified when we launch</p>
+        <p class="cta">Make sure you're notified when we launch!</p>
         {% include subscribe.html %}
   		</div>
   	</div>

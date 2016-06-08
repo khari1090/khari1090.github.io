@@ -23,23 +23,29 @@ body {
   display: block; }
 
 .center {
-  width: 70%;
+  width: 89%;
   margin: 0 auto;
   position: relative; }
+@media(max-width: 600px) {
+  .center {
+    align-items: center; } }
   .center h1 {
     font-size: 70px;
     margin: 0 auto;
     text-align: center;
     color: white;
     padding: 10px; }
-@media(max-width: 700px) {
+@media(max-width: 600px) {
   .center h1 {
-    font-size: 40px; } }
+    font-size: 50px; } }
   .center h2 {
     font-size: 40px;
     margin: 0 auto;
     text-align: center;
     color: #967800; }
+@media(max-width: 600px) {
+  .center h2 {
+    font-size: 20px; } }
   .center p {
     color: #967800;
     margin: 0 auto;
@@ -55,23 +61,34 @@ body {
     bottom: 0;
     position: relative;
     display: block; }
-
+@media(max-width:700px) {
+  .center img {
+    width: 300px; } }
 .column {
   width: 89%;
   margin: 0 auto;
-  position: relative;
-  align-items: left; }
-
-h1 {
-  color: white;
-  text-align: center; }
-  h1 p {
-    color: #333;
-    font-size: 24px;
+  position: relative; }
+  .column h1 {
+    color: white;
+    text-align: center; }
+  .column h2 {
+    color: #005C85;
+    position: relative;
     margin: 0 auto;
-    font-size: 1.25em;
+    font-size: 20px;
     text-align: center;
-    padding: 10px; }
+    padding-bottom: 25px;
+    font-weight: 400; }
+    .column h2 p {
+      color: #333;
+      font-size: 24px;
+      margin: 0 auto;
+      font-size: 1.25em;
+      text-align: center;
+      padding: 10px; }
+    .column h2 a {
+      color: #005C85;
+      text-decoration: underline; }
 
 .cta {
   width: 89%;
@@ -97,16 +114,19 @@ h1 {
 
 #mailchimp {
   margin: 0 auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   overflow: hidden;
   position: relative;
   width: 594px;
+  min-width: 40%;
   padding: 40px;
   cursor: pointer; }
-
+@media(max-width: 700px) {
+  #mailchimp {
+    width: 80%;
+    margin: 0 auto;
+    display: relative;
+    float: inherit;
+    align-items: center; } }
 #mailchimp input {
   margin: 0 auto;
   top: 0;
@@ -119,7 +139,9 @@ h1 {
   padding: 25px;
   border-radius: 4px;
   color: #272F39; }
-
+@media(max-width: 800px) {
+  #mailchimp input {
+    font-size: 24px; } }
 #mailchimp input.email {
   display: inline-block;
   float: left;
@@ -130,23 +152,30 @@ h1 {
   right: 0;
   bottom: 0;
   margin-bottom: 50px; }
-@media(max-width: 700px) {
+@media(max-width: 800px) {
   #mailchimp input.email {
+    margin-left: 0;
+    margin-bottom: 20px;
     vertical-align: middle;
-    display: table-cell;
-    position: relative; } }
+    align-items: center;
+    position: relative;
+    width: 85%;
+    display: flex;
+    float: none; } }
 #mailchimp input[type="submit"] {
   box-shadow: 0 2px 0 #009948;
   background: #59CD90;
   color: white;
   margin-left: 20px;
   overflow: hidden;
-  cursor: pointer; }
+  cursor: pointer;
+  float: right; }
   #mailchimp input[type="submit"]:hover {
     background: #3EBB7A; }
-@media(max-width: 700px) {
+@media(max-width: 800px) {
   #mailchimp input[type="submit"] {
-    vertical-align: middle;
-    display: table-cell;
+    margin: 0 auto;
+    align-items: center;
     position: relative;
-    float: left; } }
+    display: flex;
+    float: none; } }
