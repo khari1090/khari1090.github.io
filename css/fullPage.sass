@@ -95,7 +95,7 @@ body
     color: #005C85
     position: relative
     margin: 0 auto
-    font-size: 20px
+    font-size: 24px
     text-align: center
     padding-bottom: 25px
     font-weight: 400
@@ -115,16 +115,24 @@ body
 .snapchat
   width: 40%
   margin: 0 auto
+  align-items: center
   position: relative
   h1
     text-align: center
     padding-bottom: 50px
     color: #333
     font-weight: 400
+    @media(max-width: 700px)
+      font-size: 24px
   h2
     font-size: 40px
     padding: 10px
     text-align: center
+    a
+      text-decoration: none
+      color: #020202
+      // padding: 20px
+      // border: 3px solid #020202
   img
     margin: 0 auto
     position: relative
@@ -136,9 +144,10 @@ body
   margin: 0 auto
   position: relative
   align-items: left
+  font-size: 24px
   p
     color: #7D3027
-    font-size: 24px
+    // font-size: 24px
     margin: 0 auto
     font-size: 1.25em
     text-align: center
@@ -146,6 +155,7 @@ body
   h1
     color: white
     text-align: center
+    font-size: 40px
 
 
 
@@ -208,7 +218,6 @@ body
     width: 85%
     display: flex
     float: none
-
 
 // button
 #mailchimp input[type="submit"]

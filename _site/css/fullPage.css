@@ -75,7 +75,7 @@ body {
     color: #005C85;
     position: relative;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     padding-bottom: 25px;
     font-weight: 400; }
@@ -93,16 +93,23 @@ body {
 .snapchat {
   width: 40%;
   margin: 0 auto;
+  align-items: center;
   position: relative; }
   .snapchat h1 {
     text-align: center;
     padding-bottom: 50px;
     color: #333;
     font-weight: 400; }
+@media(max-width: 700px) {
+  .snapchat h1 {
+    font-size: 24px; } }
   .snapchat h2 {
     font-size: 40px;
     padding: 10px;
     text-align: center; }
+    .snapchat h2 a {
+      text-decoration: none;
+      color: #020202; }
   .snapchat img {
     margin: 0 auto;
     position: relative;
@@ -112,17 +119,18 @@ body {
   width: 89%;
   margin: 0 auto;
   position: relative;
-  align-items: left; }
+  align-items: left;
+  font-size: 24px; }
   .cta p {
     color: #7D3027;
-    font-size: 24px;
     margin: 0 auto;
     font-size: 1.25em;
     text-align: center;
     padding: 10px; }
   .cta h1 {
     color: white;
-    text-align: center; }
+    text-align: center;
+    font-size: 40px; }
 
 .twitter-share-button {
   position: absolute;
