@@ -15,12 +15,12 @@ body {
   font-feature-settings: "liga", "dlig"; }
 
 .fullpage {
-  display: block; }
+  display: flex; }
 
 .head {
   width: 50%;
   margin: 0 auto;
-  display: block; }
+  display: flex; }
 
 .center {
   width: 89%;
@@ -37,7 +37,8 @@ body {
     padding: 10px; }
 @media(max-width: 600px) {
   .center h1 {
-    font-size: 50px; } }
+    font-size: 30px;
+    padding-top: 80px; } }
   .center h2 {
     font-size: 40px;
     margin: 0 auto;
@@ -45,13 +46,19 @@ body {
     color: #967800; }
 @media(max-width: 600px) {
   .center h2 {
-    font-size: 20px; } }
+    font-size: 16px;
+    margin-bottom: 0; } }
   .center p {
     color: #967800;
     margin: 0 auto;
     font-size: 24px;
     text-align: center;
     padding: 10px; }
+@media(max-width: 600px) {
+  .center p {
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-bottom: 0; } }
   .center img {
     width: 600px;
     margin: 0 auto;
@@ -72,6 +79,10 @@ body {
     color: white;
     text-align: center;
     font-size: 40px; }
+@media(max-width: 600px) {
+  .column h1 {
+    font-size: 24px;
+    padding-top: 80px; } }
   .column h2 {
     color: #005C85;
     position: relative;
@@ -80,6 +91,10 @@ body {
     text-align: center;
     padding-bottom: 25px;
     font-weight: 400; }
+@media(max-width: 600px) {
+  .column h2 {
+    font-size: 16px;
+    margin-bottom: 0; } }
     .column h2 p {
       color: #333;
       font-size: 24px;
@@ -95,7 +110,11 @@ body {
   width: 40%;
   margin: 0 auto;
   align-items: center;
-  position: relative; }
+  position: relative;
+  display: block; }
+@media(max-width: 700px) {
+  .snapchat {
+    width: 60%; } }
   .snapchat h1 {
     text-align: center;
     padding-bottom: 50px;
@@ -103,19 +122,31 @@ body {
     font-weight: 400; }
 @media(max-width: 700px) {
   .snapchat h1 {
-    font-size: 24px; } }
+    font-size: 16px;
+    padding-bottom: 0; } }
   .snapchat h2 {
     font-size: 40px;
     padding: 10px;
     text-align: center; }
-    .snapchat h2 a {
-      text-decoration: none;
-      color: #020202; }
-  .snapchat img {
+@media(max-width: 700px) {
+  .snapchat h2 {
+    margin: 0; } }
+  .snapchat a {
+    text-decoration: none;
+    color: #020202; }
+@media(max-width: 700px) {
+  .snapchat a {
+    font-size: 22px;
     margin: 0 auto;
-    position: relative;
-    display: block; }
-
+    display: inline-block;
+    padding: 0 !important; }
+    .snapchat a img {
+      margin: 0 auto;
+      position: relative;
+      display: block; }
+  @media(max-width: 700px) {
+    .snapchat a img {
+      transform: scale(0.5); } } }
 .cta {
   width: 89%;
   margin: 0 auto;
@@ -152,7 +183,8 @@ body {
     margin: 0 auto;
     display: relative;
     float: inherit;
-    align-items: center; } }
+    align-items: center;
+    padding: 0; } }
 #mailchimp input {
   margin: 0 auto;
   top: 0;
@@ -167,7 +199,8 @@ body {
   color: #272F39; }
 @media(max-width: 800px) {
   #mailchimp input {
-    font-size: 24px; } }
+    font-size: 16px;
+    padding: 10px; } }
 #mailchimp input.email {
   display: inline-block;
   float: left;

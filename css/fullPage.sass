@@ -30,12 +30,12 @@ body
   font-feature-settings: "liga", "dlig"
 
 .fullpage
-  display: block
+  display: flex
 
 .head
   width: 50%
   margin: 0 auto
-  display: block
+  display: flex
 
 .center
   // border: 1px solid pink
@@ -54,21 +54,27 @@ body
     color: white
     padding: 10px
     @media(max-width: 600px)
-      font-size: 50px
+      font-size: 30px
+      padding-top: 80px
   h2
     font-size: 40px
     margin: 0 auto
     text-align: center
     color: #967800
     @media(max-width: 600px)
-      font-size: 20px
-
+      font-size: 16px
+      margin-bottom: 0
   p
     color: #967800
     margin: 0 auto
     font-size: 24px
     text-align: center
     padding: 10px
+    @media(max-width: 600px)
+      font-size: 16px
+      margin-bottom: 0
+      padding-bottom: 0
+
   img
     width: 600px
     margin: 0 auto
@@ -91,6 +97,9 @@ body
     color: white
     text-align: center
     font-size: 40px
+    @media(max-width: 600px)
+      font-size: 24px
+      padding-top: 80px
 
   h2
     color: #005C85
@@ -100,6 +109,10 @@ body
     text-align: center
     padding-bottom: 25px
     font-weight: 400
+    @media(max-width: 600px)
+      font-size: 16px
+      margin-bottom: 0
+
 
     p
       color: #333
@@ -118,26 +131,39 @@ body
   margin: 0 auto
   align-items: center
   position: relative
+  display: block
+  @media(max-width: 700px)
+    width: 60%
   h1
     text-align: center
     padding-bottom: 50px
     color: #333
     font-weight: 400
     @media(max-width: 700px)
-      font-size: 24px
+      font-size: 16px
+      padding-bottom: 0
+
   h2
     font-size: 40px
     padding: 10px
     text-align: center
-    a
-      text-decoration: none
-      color: #020202
-      // padding: 20px
-      // border: 3px solid #020202
-  img
-    margin: 0 auto
-    position: relative
-    display: block
+    @media(max-width: 700px)
+      margin: 0
+  a
+    text-decoration: none
+    color: #020202
+    @media(max-width: 700px)
+      font-size: 22px
+      margin: 0 auto
+      display: inline-block
+      padding: 0 !important
+      img
+        margin: 0 auto
+        position: relative
+        display: block
+        @media(max-width: 700px)
+          transform: scale(0.5)
+
 
 
 .cta
@@ -183,6 +209,7 @@ body
     display: relative
     float: inherit
     align-items: center
+    padding: 0
 
 // field input
 #mailchimp input
@@ -198,7 +225,8 @@ body
   border-radius: 4px
   color: #272F39
   @media(max-width: 800px)
-    font-size: 24px
+    font-size: 16px
+    padding: 10px
 
 // field
 #mailchimp input.email
