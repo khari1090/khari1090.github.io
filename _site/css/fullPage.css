@@ -70,7 +70,8 @@ body {
   position: relative; }
   .column h1 {
     color: white;
-    text-align: center; }
+    text-align: center;
+    font-size: 40px; }
   .column h2 {
     color: #005C85;
     position: relative;
@@ -120,7 +121,7 @@ body {
   margin: 0 auto;
   position: relative;
   align-items: left;
-  font-size: 24px; }
+  font-size: 24px !important; }
   .cta p {
     color: #7D3027;
     margin: 0 auto;
