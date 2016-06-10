@@ -25,7 +25,8 @@ body {
 .center {
   width: 89%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  top: 80px; }
   @media screen and (max-width: 600px) {
     .center {
       align-items: center; } }
@@ -40,10 +41,11 @@ body {
         font-size: 30px;
         padding-top: 80px; } }
   .center h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 0 auto;
     text-align: center;
-    color: #967800; }
+    color: #967800;
+    margin-bottom: 0; }
     @media screen and (max-width: 600px) {
       .center h2 {
         font-size: 16px;
@@ -53,14 +55,14 @@ body {
     margin: 0 auto;
     font-size: 24px;
     text-align: center;
-    padding: 10px; }
+    padding: 0; }
     @media screen and (max-width: 600px) {
       .center p {
         font-size: 16px;
         margin-bottom: 0;
         padding-bottom: 0; } }
   .center img {
-    width: 600px;
+    width: 400px;
     margin: 0 auto;
     top: 0;
     left: 0;
@@ -79,7 +81,8 @@ body {
   .column h1 {
     color: white;
     text-align: center;
-    font-size: 40px; }
+    font-size: 40px;
+    padding-top: 30px; }
     @media screen and (max-width: 600px) {
       .column h1 {
         font-size: 24px;
@@ -197,7 +200,7 @@ body {
   border: medium none;
   font-family: "Varela Round", sans-serif;
   font-size: 30px;
-  padding: 25px;
+  padding: 20px;
   border-radius: 4px;
   color: #272F39; }
   @media screen and (max-width: 800px) {
