@@ -36,9 +36,9 @@ layout: default
         				sectionsColor: ['#FBD335', '#3FA7D6', '#FFFE00', '#EE6352', '#EAF0F4'],
         				anchors: ['Welcome', 'blog', 'snapchat', 'cta', 'footer'],
         				menu: '#menu',
-        				// scrollingSpeed: 1000,
                 slidesNavigation: true,
                 navigation: true,
+                paddingTop: 80
                 // showActiveTooltip: true,
                 // navigationTooltips: ['firstSlide', 'secondSlide', 'thiedSlide', 'fourthSlide']
   			});
@@ -58,17 +58,17 @@ layout: default
   	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
   </ul> -->
 
+<div class="homepage">
   <div id="fullpage">
 
   	<div class="section active" id="section0">
-      <div class="head"></div>
-        <div class="center">
-          <h1>Welcome to  LYNGO</h1>
-    		  <h2>Learn a new language while watching your favorite shows. It's that simple.</h2>
-    		  <img class="center" src="/assets/images/lyngo-interface.png" alt="lyngo-browser"/>
-          <p>Get notified upon release!</p>
-          {% include subscribe.html %}
-        </div>
+      <div class="center">
+            <h1>Welcome to LYNGO</h1>
+    		    <h2>Learn a new language while watching your favorite shows. It's that simple.</h2>
+    		    <img src="/assets/images/lyngo-interface.png" alt="lyngo-browser"/>
+            <p>Get notified upon release!</p>
+      </div>
+      {% include subscribe.html %}
   	</div>
 
       	<div class="section" id="section1">
@@ -81,7 +81,7 @@ layout: default
           <div class="cards">
              {% for post in site.posts limit:3 %}
 
-             <div class="card">
+             <div class="card" style="height: 400px">
 
                <div class="card-image">
                  <div>
@@ -91,10 +91,6 @@ layout: default
 
                <div class="card-header">
                  <a href="{{post.url}}" style="text-decoration: none; color: #333332">{{post.title}}</a>
-               </div>
-
-               <div class="card-copy">
-                 <p>{{ post.excerpt | strip_html | truncatewords: 16 }}</p>
                </div>
 
                <div class="card-meta">
@@ -113,11 +109,17 @@ layout: default
 
     <div class="section" id="section2">
       <div class="snapchat">
-        <h1>Follow us on snapchat for language learning hacks</h1>
-        <a href="https://www.snapchat.com/add/lyngoapp"><img src="/assets/images/snapchat-logo@2x.png" onmouseover="this.src='/assets/images/snpachat-logo-add@2x.png'" onmouseout="this.src='/assets/images/snapchat-logo@2x.png'"/></a>
-        <h2><a href="https://www.snapchat.com/add/lyngoapp">@lyngoapp</a></h2>
+        <div>
+          <h1>Follow us on snapchat for language learning hacks</h1>
+        </div>
+        <div>
+          <a href="https://www.snapchat.com/add/lyngoapp"><img src="/assets/images/snapchat-logo@2x.png" onmouseover="this.src='/assets/images/snpachat-logo-add@2x.png'" onmouseout="this.src='/assets/images/snapchat-logo@2x.png'"/></a>
+        </div>
+        <div>
+          <h2><a href="https://www.snapchat.com/add/lyngoapp">@lyngoapp</a></h2>
+        </div>
+      </div>
     </div>
-  </div>
 
   	<div class="section" id="section3">
   		<div class="cta">
@@ -134,6 +136,7 @@ layout: default
     </div>
 
   </div>
+</div>
 
     <!-- content end -->
 

@@ -185,9 +185,9 @@
         				sectionsColor: ['#FBD335', '#3FA7D6', '#FFFE00', '#EE6352', '#EAF0F4'],
         				anchors: ['Welcome', 'blog', 'snapchat', 'cta', 'footer'],
         				menu: '#menu',
-        				// scrollingSpeed: 1000,
                 slidesNavigation: true,
                 navigation: true,
+                paddingTop: 80
                 // showActiveTooltip: true,
                 // navigationTooltips: ['firstSlide', 'secondSlide', 'thiedSlide', 'fourthSlide']
   			});
@@ -207,37 +207,41 @@
   	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
   </ul> -->
 
+<div class="homepage">
   <div id="fullpage">
 
   	<div class="section active" id="section0">
-      <div class="head"></div>
-        <div class="center">
-          <h1>Welcome to  LYNGO</h1>
-    		  <h2>Learn a new language while watching your favorite shows. It's that simple.</h2>
-    		  <img class="center" src="/assets/images/lyngo-interface.png" alt="lyngo-browser"/>
-          <p>Get notified upon release!</p>
-          <!-- Begin MailChimp Signup Form -->
+      <div class="center">
+            <h1>Welcome to LYNGO</h1>
+    		    <h2>Learn a new language while watching your favorite shows. It's that simple.</h2>
+    		    <img src="/assets/images/lyngo-interface.png" alt="lyngo-browser"/>
+            <p>Get notified upon release!</p>
+      </div>
+      <!-- Begin MailChimp Signup Form -->
 <div id="mailchimp">
   <form action="//lyngoapp.us13.list-manage.com/subscribe/post?u=7fd17f4e90953d1a8546ad6ee&amp;id=99742e4621" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <!-- <div id="mc_embed_signup_scroll"> -->
 
-  	<input type="email" width="60" value="Enter your email..." name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+  	<input type="email" value="Enter your email..." name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
 
       <div id="mce-responses" class="clear">
-    		<div class="response" id="mce-error-response" style="display:none"></div>
-    		<div class="response" id="mce-success-response" style="display:none"></div>
+        <div>
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
       </div>
 
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7fd17f4e90953d1a8546ad6ee_99742e4621" tabindex="-1" value=""></div>
 
-      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
   </form>
 </div>
 
 <!--End mc_embed_signup-->
 
-        </div>
   	</div>
 
       	<div class="section" id="section1">
@@ -250,7 +254,7 @@
           <div class="cards">
              
 
-             <div class="card">
+             <div class="card" style="height: 400px">
 
                <div class="card-image">
                  <div>
@@ -262,12 +266,6 @@
                  <a href="/language/2016/05/30/fourth-post.html" style="text-decoration: none; color: #333332">What Happens When There Is A Fourth Post</a>
                </div>
 
-               <div class="card-copy">
-                 <p>Yes, yes, and yes
-
-</p>
-               </div>
-
                <div class="card-meta">
                 <time datetime="30 May 2016">30 May 2016</time>
               </div>
@@ -276,7 +274,7 @@
 
            
 
-             <div class="card">
+             <div class="card" style="height: 400px">
 
                <div class="card-image">
                  <div>
@@ -288,12 +286,6 @@
                  <a href="/language/2016/05/27/why-you-cant-learn-a-foreign-language.html" style="text-decoration: none; color: #333332">Why You Can't Learn A Foreign Language</a>
                </div>
 
-               <div class="card-copy">
-                 <p>Okay.
-
-</p>
-               </div>
-
                <div class="card-meta">
                 <time datetime="27 May 2016">27 May 2016</time>
               </div>
@@ -302,7 +294,7 @@
 
            
 
-             <div class="card">
+             <div class="card" style="height: 400px">
 
                <div class="card-image">
                  <div>
@@ -312,10 +304,6 @@
 
                <div class="card-header">
                  <a href="/misc/2016/05/27/new-post.html" style="text-decoration: none; color: #333332">New Post</a>
-               </div>
-
-               <div class="card-copy">
-                 <p>This is some random text. It’s not important what it says. It is, however, important that...</p>
                </div>
 
                <div class="card-meta">
@@ -334,11 +322,17 @@
 
     <div class="section" id="section2">
       <div class="snapchat">
-        <h1>Follow us on snapchat for language learning hacks</h1>
-        <a href="https://www.snapchat.com/add/lyngoapp"><img src="/assets/images/snapchat-logo@2x.png" onmouseover="this.src='/assets/images/snpachat-logo-add@2x.png'" onmouseout="this.src='/assets/images/snapchat-logo@2x.png'"/></a>
-        <h2><a href="https://www.snapchat.com/add/lyngoapp">@lyngoapp</a></h2>
+        <div>
+          <h1>Follow us on snapchat for language learning hacks</h1>
+        </div>
+        <div>
+          <a href="https://www.snapchat.com/add/lyngoapp"><img src="/assets/images/snapchat-logo@2x.png" onmouseover="this.src='/assets/images/snpachat-logo-add@2x.png'" onmouseout="this.src='/assets/images/snapchat-logo@2x.png'"/></a>
+        </div>
+        <div>
+          <h2><a href="https://www.snapchat.com/add/lyngoapp">@lyngoapp</a></h2>
+        </div>
+      </div>
     </div>
-  </div>
 
   	<div class="section" id="section3">
   		<div class="cta">
@@ -349,17 +343,21 @@
   <form action="//lyngoapp.us13.list-manage.com/subscribe/post?u=7fd17f4e90953d1a8546ad6ee&amp;id=99742e4621" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <!-- <div id="mc_embed_signup_scroll"> -->
 
-  	<input type="email" width="60" value="Enter your email..." name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+  	<input type="email" value="Enter your email..." name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
 
       <div id="mce-responses" class="clear">
-    		<div class="response" id="mce-error-response" style="display:none"></div>
-    		<div class="response" id="mce-success-response" style="display:none"></div>
+        <div>
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
       </div>
 
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7fd17f4e90953d1a8546ad6ee_99742e4621" tabindex="-1" value=""></div>
 
-      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
   </form>
 </div>
 
@@ -386,6 +384,7 @@
     </div>
 
   </div>
+</div>
 
     <!-- content end -->
 
