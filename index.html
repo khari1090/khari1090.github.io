@@ -38,7 +38,7 @@ layout: default
         				menu: '#menu',
                 slidesNavigation: true,
                 navigation: true,
-                paddingTop: 80
+                paddingTop: 50
                 // showActiveTooltip: true,
                 // navigationTooltips: ['firstSlide', 'secondSlide', 'thiedSlide', 'fourthSlide']
   			});
@@ -78,10 +78,10 @@ layout: default
 
         <!-- Cards Start -->
 
-          <div class="cards">
+          <div class="curstom-section cards">
              {% for post in site.posts limit:3 %}
 
-             <div class="card" style="height: 400px">
+             <div class="card">
 
                <div class="card-image">
                  <div>
@@ -92,6 +92,10 @@ layout: default
                <div class="card-header">
                  <a href="{{post.url}}" style="text-decoration: none; color: #333332">{{post.title}}</a>
                </div>
+<!-- 
+               <div class="card-copy">
+                 <p>{{ post.excerpt | strip_html | truncatewords: 16 }}</p>
+               </div> -->
 
                <div class="card-meta">
                 <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>

@@ -31,21 +31,20 @@ body
 .homepage
   font-size: 16px
   margin: 0 auto
-  padding-bottom: 0
   display: flex
   @media screen and (max-width: 950px)
     font-size: 12px
   @media screen and (max-width: 700px)
-    font-size: 8px
+    font-size: 10px
 
 .custom-section
-  // border: 1px solid pink
   width: 80%
   margin: 0 auto
   text-align: center
 
   h1
     font-size: 4em
+    color: white
   h2
     font-size: 2em
   p
@@ -53,7 +52,7 @@ body
 
 .top-section
   h1
-    color: white
+    margin-bottom: 0 !important
   h2
     color: #967800
   p
@@ -62,14 +61,48 @@ body
     width: 30%
 
 .blog
+  h1
+    color: white
+    font-size: 3em
   h2
     color: #005c85
+  p
+    color: #333
+    font-size: 0.9em
+    text-align: left
+  a
+    color: white
+    text-decoration: underline
+
+.cards
+  text-align: left
+  .card
+    height: 400px
+  .card-header
+    font-size: 1.5em
+  @media screen and (max-width: 1200px)
+    .card
+      height: 50%
+    .card-meta
+      position: relative
+    img
+      display: none
+
 
 .snapchat
+  width: 35%
   h1
     color: #020202
+    font-size: 2em
+  a
+    color: #020202
+    text-decoration: none
+  img
+    width: 50%
 
 .cta
+  h1
+    margin-bottom: 0 !important
   p
     color: #7d3027
 
@@ -78,7 +111,7 @@ body
 #mailchimp
   //border: 1px solid black
   margin: 0 auto
-  width: 70%
+  width: 60%
   cursor: pointer
   display: flex
 
@@ -86,12 +119,12 @@ body
     width: 100%
 
   input
-    font-size: 180%
+    font-size: 170%
     border: none
     font-family: $font-lyngo
     border-radius: 4px
     width: 60%
-    padding: 4%
+    padding: 3%
 
 
   input.email

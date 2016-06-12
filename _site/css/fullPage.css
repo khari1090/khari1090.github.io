@@ -17,28 +17,28 @@ body {
 .homepage {
   font-size: 16px;
   margin: 0 auto;
-  padding-bottom: 0;
   display: flex; }
   @media screen and (max-width: 950px) {
     .homepage {
       font-size: 12px; } }
   @media screen and (max-width: 700px) {
     .homepage {
-      font-size: 8px; } }
+      font-size: 10px; } }
 
 .custom-section {
   width: 80%;
   margin: 0 auto;
   text-align: center; }
   .custom-section h1 {
-    font-size: 4em; }
+    font-size: 4em;
+    color: white; }
   .custom-section h2 {
     font-size: 2em; }
   .custom-section p {
     font-size: 1.5em; }
 
 .top-section h1 {
-  color: white; }
+  margin-bottom: 0 !important; }
 .top-section h2 {
   color: #967800; }
 .top-section p {
@@ -46,29 +46,63 @@ body {
 .top-section img {
   width: 30%; }
 
+.blog h1 {
+  color: white;
+  font-size: 3em; }
 .blog h2 {
   color: #005c85; }
+.blog p {
+  color: #333;
+  font-size: 0.9em;
+  text-align: left; }
+.blog a {
+  color: white;
+  text-decoration: underline; }
 
-.snapchat h1 {
-  color: #020202; }
+.cards {
+  text-align: left; }
+  .cards .card {
+    height: 400px; }
+  .cards .card-header {
+    font-size: 1.5em; }
+  @media screen and (max-width: 1200px) {
+    .cards .card {
+      height: 50%; }
+    .cards .card-meta {
+      position: relative; }
+    .cards img {
+      display: none; } }
 
+.snapchat {
+  width: 35%; }
+  .snapchat h1 {
+    color: #020202;
+    font-size: 2em; }
+  .snapchat a {
+    color: #020202;
+    text-decoration: none; }
+  .snapchat img {
+    width: 50%; }
+
+.cta h1 {
+  margin-bottom: 0 !important; }
 .cta p {
   color: #7d3027; }
 
 #mailchimp {
   margin: 0 auto;
-  width: 70%;
+  width: 60%;
   cursor: pointer;
   display: flex; }
   #mailchimp form {
     width: 100%; }
   #mailchimp input {
-    font-size: 180%;
+    font-size: 170%;
     border: none;
     font-family: "Varela Round", sans-serif;
     border-radius: 4px;
     width: 60%;
-    padding: 4%; }
+    padding: 3%; }
   #mailchimp input.email {
     float: left; }
   #mailchimp input[type="submit"] {
