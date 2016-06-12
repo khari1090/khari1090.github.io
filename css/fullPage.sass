@@ -8,7 +8,6 @@
 .cf
   @include clearfix
 
-$rs: 16px
 
 $font-serif: Linux Libertine
 $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif
@@ -30,134 +29,79 @@ body
   font-feature-settings: "liga", "dlig"
 
 .homepage
-  font-size: 2em
+  font-size: 16px
   margin: 0 auto
   padding-bottom: 0
-
-.fullpage
   display: flex
+  @media screen and (max-width: 950px)
+    font-size: 12px
+  @media screen and (max-width: 700px)
+    font-size: 8px
 
-.center
+.custom-section
   // border: 1px solid pink
   width: 80%
   margin: 0 auto
   text-align: center
-  @media screen and (max-width: 700px)
-    font-size: 20px
 
   h1
-    // border: 1px solid black
-    color: white
-    margin-bottom: 0 !important
-
+    font-size: 4em
   h2
-    font-size: 0.8em
-    color: #967800
+    font-size: 2em
+  p
+    font-size: 1.5em
 
+.top-section
+  h1
+    color: white
+  h2
+    color: #967800
   p
     color: #967800
-    font-size: 0.8em
   img
     width: 30%
 
-.column
-  width: 90%
-  margin: 0 auto
-  @media screen and (max-width: 700px)
-    font-size: 0.8em
-
-  h1
-    color: white
-    text-align: center
-    font-size: 1em
-
+.blog
   h2
-    color: #005C85
-    text-align: center
-    padding-bottom: 25px
-    font-weight: 400
-    font-size: 0.8em
-
-  p
-    color: #333
-    font-size: 0.5em
-    padding: 10px
-
-  a
-    color: white
-    text-decoration: underline
+    color: #005c85
 
 .snapchat
-  width: 40%
-  font-size: 2em
-  margin: 0 auto
-  text-align: center
-  @media screen and (max-width: 700px)
-    width: 60%
-    font-size: 1.25em
-
   h1
-    color: #333
-    font-weight: 400
-    font-size: 0.5em
-
-  h2
-    font-size: 0.6em
-
-  a
-    text-decoration: none
     color: #020202
-    margin: 0
-  img
-    width: 30%
-
 
 .cta
-  text-align: center
-  font-size: 1em
-  @media screen and (max-width: 700px)
-    font-size: 0.5em
-  h1
-    color: white
   p
-    color: #7D3027
-    font-size: 1em
+    color: #7d3027
+
 
 // Mailchimp
 #mailchimp
-  border: 1px solid black
+  //border: 1px solid black
   margin: 0 auto
-  width: 40%
+  width: 70%
   cursor: pointer
-  font-size: 1em
-  // align-items: stretch
   display: flex
-  @media screen and (max-width: 700px)
-    width: 70%
-    justify-content: center
 
-#mailchimp input
-  border: none
-  font-family: $font-lyngo
-  font-size: 0.8em
-  // padding: 4%
-  border-radius: 4px
-  width: 50%
-  // justify-content: center
-  flex-direction: row
+  form
+    width: 100%
 
-// field
-#mailchimp input.email
-  float: left
-  flex-direction: row
+  input
+    font-size: 180%
+    border: none
+    font-family: $font-lyngo
+    border-radius: 4px
+    width: 60%
+    padding: 4%
 
-// button
-#mailchimp input[type="submit"]
-  box-shadow: 0 2px 0 #009948
-  background: #59CD90
-  color: white
-  cursor: pointer
-  flex-direction: row
-  width: 40%
-  &:hover
-    background: #3EBB7A
+
+  input.email
+    float: left
+
+  input[type="submit"]
+    box-shadow: 0 2px 0 #009948
+    width: 30%
+    cursor: pointer
+    background: #59CD90
+    color: white
+    &:hover
+      background: #3EBB7A

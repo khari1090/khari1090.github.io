@@ -62,19 +62,19 @@ layout: default
   <div id="fullpage">
 
   	<div class="section active" id="section0">
-      <div class="center">
+      <div class="custom-section top-section">
             <h1>Welcome to LYNGO</h1>
     		    <h2>Learn a new language while watching your favorite shows. It's that simple.</h2>
     		    <img src="/assets/images/lyngo-interface.png" alt="lyngo-browser"/>
             <p>Get notified upon release!</p>
+            {% include subscribe.html %}
       </div>
-      {% include subscribe.html %}
   	</div>
 
       	<div class="section" id="section1">
-  		    <div class="column">
+  		    <div class="custom-section blog">
     			<h1>LATEST BLOG POSTS</h1>
-          <h2 class="column">We write articles about language learning. View more on our <a href="{{ site.baseurl }}/blog">blog</a>.</h2>
+          <h2>We write articles about language learning. View more on our <a href="{{ site.baseurl }}/blog">blog</a>.</h2>
 
         <!-- Cards Start -->
 
@@ -108,21 +108,15 @@ layout: default
   	</div>
 
     <div class="section" id="section2">
-      <div class="snapchat">
-        <div>
+      <div class="custom-section snapchat">
           <h1>Follow us on snapchat for language learning hacks</h1>
-        </div>
-        <div>
           <a href="https://www.snapchat.com/add/lyngoapp"><img src="/assets/images/snapchat-logo@2x.png" onmouseover="this.src='/assets/images/snpachat-logo-add@2x.png'" onmouseout="this.src='/assets/images/snapchat-logo@2x.png'"/></a>
-        </div>
-        <div>
           <h2><a href="https://www.snapchat.com/add/lyngoapp">@lyngoapp</a></h2>
-        </div>
       </div>
     </div>
 
   	<div class="section" id="section3">
-  		<div class="cta">
+  		<div class="custom-section cta">
   			<h1>COMING SOON</h1>
         <p class="cta">Make sure you're notified when we launch!</p>
         {% include subscribe.html %}

@@ -15,120 +15,67 @@ body {
   font-feature-settings: "liga", "dlig"; }
 
 .homepage {
-  font-size: 2em;
+  font-size: 16px;
   margin: 0 auto;
-  padding-bottom: 0; }
-
-.fullpage {
+  padding-bottom: 0;
   display: flex; }
+  @media screen and (max-width: 950px) {
+    .homepage {
+      font-size: 12px; } }
+  @media screen and (max-width: 700px) {
+    .homepage {
+      font-size: 8px; } }
 
-.center {
+.custom-section {
   width: 80%;
   margin: 0 auto;
   text-align: center; }
-  @media screen and (max-width: 700px) {
-    .center {
-      font-size: 20px; } }
-  .center h1 {
-    color: white;
-    margin-bottom: 0 !important; }
-  .center h2 {
-    font-size: 0.8em;
-    color: #967800; }
-  .center p {
-    color: #967800;
-    font-size: 0.8em; }
-  .center img {
-    width: 30%; }
+  .custom-section h1 {
+    font-size: 4em; }
+  .custom-section h2 {
+    font-size: 2em; }
+  .custom-section p {
+    font-size: 1.5em; }
 
-.column {
-  width: 90%;
-  margin: 0 auto; }
-  @media screen and (max-width: 700px) {
-    .column {
-      font-size: 0.8em; } }
-  .column h1 {
-    color: white;
-    text-align: center;
-    font-size: 1em; }
-  .column h2 {
-    color: #005C85;
-    text-align: center;
-    padding-bottom: 25px;
-    font-weight: 400;
-    font-size: 0.8em; }
-  .column p {
-    color: #333;
-    font-size: 0.5em;
-    padding: 10px; }
-  .column a {
-    color: white;
-    text-decoration: underline; }
+.top-section h1 {
+  color: white; }
+.top-section h2 {
+  color: #967800; }
+.top-section p {
+  color: #967800; }
+.top-section img {
+  width: 30%; }
 
-.snapchat {
-  width: 40%;
-  font-size: 2em;
-  margin: 0 auto;
-  text-align: center; }
-  @media screen and (max-width: 700px) {
-    .snapchat {
-      width: 60%;
-      font-size: 1.25em; } }
-  .snapchat h1 {
-    color: #333;
-    font-weight: 400;
-    font-size: 0.5em; }
-  .snapchat h2 {
-    font-size: 0.6em; }
-  .snapchat a {
-    text-decoration: none;
-    color: #020202;
-    margin: 0; }
-  .snapchat img {
-    width: 30%; }
+.blog h2 {
+  color: #005c85; }
 
-.cta {
-  text-align: center;
-  font-size: 1em; }
-  @media screen and (max-width: 700px) {
-    .cta {
-      font-size: 0.5em; } }
-  .cta h1 {
-    color: white; }
-  .cta p {
-    color: #7D3027;
-    font-size: 1em; }
+.snapchat h1 {
+  color: #020202; }
+
+.cta p {
+  color: #7d3027; }
 
 #mailchimp {
-  border: 1px solid black;
   margin: 0 auto;
-  width: 40%;
+  width: 70%;
   cursor: pointer;
-  font-size: 1em;
   display: flex; }
-  @media screen and (max-width: 700px) {
-    #mailchimp {
-      width: 70%;
-      justify-content: center; } }
-
-#mailchimp input {
-  border: none;
-  font-family: "Varela Round", sans-serif;
-  font-size: 0.8em;
-  border-radius: 4px;
-  width: 50%;
-  flex-direction: row; }
-
-#mailchimp input.email {
-  float: left;
-  flex-direction: row; }
-
-#mailchimp input[type="submit"] {
-  box-shadow: 0 2px 0 #009948;
-  background: #59CD90;
-  color: white;
-  cursor: pointer;
-  flex-direction: row;
-  width: 40%; }
-  #mailchimp input[type="submit"]:hover {
-    background: #3EBB7A; }
+  #mailchimp form {
+    width: 100%; }
+  #mailchimp input {
+    font-size: 180%;
+    border: none;
+    font-family: "Varela Round", sans-serif;
+    border-radius: 4px;
+    width: 60%;
+    padding: 4%; }
+  #mailchimp input.email {
+    float: left; }
+  #mailchimp input[type="submit"] {
+    box-shadow: 0 2px 0 #009948;
+    width: 30%;
+    cursor: pointer;
+    background: #59CD90;
+    color: white; }
+    #mailchimp input[type="submit"]:hover {
+      background: #3EBB7A; }
