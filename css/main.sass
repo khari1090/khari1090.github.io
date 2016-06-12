@@ -62,8 +62,8 @@ body
     text-indent: -9999px
 
 .blog-title
+  margin: 0 auto
   font-family: $font-lyngo
-  margin: 10px
   padding: $rs*5.25 $rs $rs/2
   font-size: 50px
   text-align: center
@@ -765,20 +765,8 @@ pre
 
 // nav begin
 
-.nav-logo
-  // display: flex
-  position: absolute
-  float: left
-  left: $rs
-  margin: 0 auto
-  margin-top: 5px
-  background-repeat: no-repeat
-  font-size: 30px
-
-
 .nav-down
-  // border: 4px orange solid
-  transition: top 0.05s ease-in-out
+  transition: 0.2s ease-in-out
   background-color: lighten(#DDE4E8, 10%)
   overflow: hidden
   opacity: 0.9
@@ -790,76 +778,32 @@ pre
   top: 0
   height: 70px
 
+.nav-container
+  display: flex
+  margin: 0 auto
+  justify-content: space-between
+  width: 90%
 
-  ul
-    // border: 2px turquoise solid
-    cursor: pointer
-    list-style-type: none
-    vertical-align: middle
-    margin: 0 auto
-    margin-right: 20px
-    // padding: 0 auto
-    float: right
-    display: flex
-    align-items: center
+  a
+    margin-top: auto
+    margin-bottom: auto
+    font-family: $font-lyngo
+    font-size: 16px
+    font-weight: 700
+    text-decoration: none
+    color: #333332
+    padding: 5px
 
-    li
-      padding: 25px 30px
-      @media(max-width: 700px)
-        padding: 25px 10px
-
-    a
-      font-family: $font-lyngo
-      font-size: 16px
-      font-weight: 700
-      text-decoration: none
-      color: #333332
-      padding: 10px
-
+  img
+    padding-top: 10px
 
 .nav-up
-  // border: 4px orange solid
-  transition: top 0.05s ease-in-out
-  background-color: lighten(#DDE4E8, 10%)
-  overflow: hidden
-  opacity: 0.9
-  position: fixed
-  z-index: 2
-  width: 100%
-  margin: 0 auto
-  padding-right: 30%
+  transition: .1s ease-in-out
   top: -70px
-  height: 70px
-
-  ul
-    // border: 2px turquoise solid
-    cursor: pointer
-    list-style-type: none
-    vertical-align: middle
-    margin: 0 auto
-    margin-right: 20px
-    // padding: 0 auto
-    float: right
-    display: flex
-    align-items: center
-
-    li
-      padding: 25px 30px
-      @media(max-width: 700px)
-        padding: 12px 10px
-
-    a
-      font-family: $font-lyngo
-      font-size: 16px
-      font-weight: 700
-      text-decoration: none
-      color: #333332
-      padding: 10px
+  opacity: 0
 
 
 //new post header
-
-
 .post-top
   font-size: 60px
   font-family: $font-sans

@@ -179,8 +179,8 @@ body {
     text-indent: -9999px; }
 
 .blog-title {
+  margin: 0 auto;
   font-family: "Varela Round", sans-serif;
-  margin: 10px;
   padding: 84px 16px 8px;
   font-size: 50px;
   text-align: center;
@@ -867,17 +867,8 @@ pre {
   padding: 0.75em 0.75em;
   top: -50; }
 
-.nav-logo {
-  position: absolute;
-  float: left;
-  left: 16px;
-  margin: 0 auto;
-  margin-top: 5px;
-  background-repeat: no-repeat;
-  font-size: 30px; }
-
 .nav-down {
-  transition: top 0.05s ease-in-out;
+  transition: 0.2s ease-in-out;
   background-color: #fbfcfd;
   overflow: hidden;
   opacity: 0.9;
@@ -888,61 +879,28 @@ pre {
   padding-right: 30%;
   top: 0;
   height: 70px; }
-  .nav-down ul {
-    cursor: pointer;
-    list-style-type: none;
-    vertical-align: middle;
-    margin: 0 auto;
-    margin-right: 20px;
-    float: right;
-    display: flex;
-    align-items: center; }
-    .nav-down ul li {
-      padding: 25px 30px; }
-@media(max-width: 700px) {
-  .nav-down ul li {
-    padding: 25px 10px; } }
-    .nav-down ul a {
-      font-family: "Varela Round", sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      text-decoration: none;
-      color: #333332;
-      padding: 10px; }
+
+.nav-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 90%; }
+  .nav-container a {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333332;
+    padding: 5px; }
+  .nav-container img {
+    padding-top: 10px; }
 
 .nav-up {
-  transition: top 0.05s ease-in-out;
-  background-color: #fbfcfd;
-  overflow: hidden;
-  opacity: 0.9;
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  margin: 0 auto;
-  padding-right: 30%;
+  transition: 0.1s ease-in-out;
   top: -70px;
-  height: 70px; }
-  .nav-up ul {
-    cursor: pointer;
-    list-style-type: none;
-    vertical-align: middle;
-    margin: 0 auto;
-    margin-right: 20px;
-    float: right;
-    display: flex;
-    align-items: center; }
-    .nav-up ul li {
-      padding: 25px 30px; }
-@media(max-width: 700px) {
-  .nav-up ul li {
-    padding: 12px 10px; } }
-    .nav-up ul a {
-      font-family: "Varela Round", sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      text-decoration: none;
-      color: #333332;
-      padding: 10px; }
+  opacity: 0; }
 
 .post-top {
   font-size: 60px;
