@@ -69,12 +69,12 @@ body {
     .cards .card {
       height: 50%; }
     .cards .card-meta {
-      position: relative; }
+      display: none; }
     .cards img {
       display: none; } }
 
 .snapchat {
-  width: 35%; }
+  width: 40%; }
   .snapchat h1 {
     color: #020202;
     font-size: 2em; }
@@ -91,9 +91,12 @@ body {
 
 #mailchimp {
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   cursor: pointer;
   display: flex; }
+  @media screen and (max-width: 700) {
+    #mailchimp {
+      width: 95%; } }
   #mailchimp form {
     width: 100%; }
   #mailchimp input {
