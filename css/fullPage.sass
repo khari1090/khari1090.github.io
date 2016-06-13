@@ -114,8 +114,9 @@ body
   width: 70%
   cursor: pointer
   display: flex
-  @media screen and (max-width: 700)
-    width: 95%
+  @media screen and (max-width: px)
+    width: 100%
+    justify-content: space-around
 
   form
     width: 100%
@@ -126,6 +127,7 @@ body
     font-family: $font-lyngo
     border-radius: 4px
     width: 60%
+    min-width: 200px
     padding: 3%
 
   input.email
@@ -137,5 +139,7 @@ body
     cursor: pointer
     background: #59CD90
     color: white
+    min-width: 100px
+    -webkit-appearance: none
     &:hover
       background: #3EBB7A
