@@ -4,6 +4,7 @@ title:  "Why You Can't Learn A Foreign Language"
 date:   2016-05-27 14:34:25
 categories: Language
 tags: featured
+comments: true
 image: /assets/article_images/2016-05-27-why-you-cant-learn-a-foreign-language/headache.png
 ---
 
