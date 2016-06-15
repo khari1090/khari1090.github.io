@@ -84,6 +84,9 @@ GEM
       jekyll (>= 2.0)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
+    jekyll-seo (0.0.2)
+    jekyll-seo-tag (1.2.0)
+      jekyll (>= 2.0)
     jekyll-sitemap (0.8.1)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
@@ -139,6 +142,8 @@ DEPENDENCIES
   bourbon
   github-pages
   jekyll-paginate
+  jekyll-seo
+  jekyll-seo-tag
   jemoji
 
 BUNDLED WITH

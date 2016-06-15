@@ -1,14 +1,16 @@
 # Build settings
 gems:
+  - jekyll-seo-tag
+  - jekyll-seo
   - jemoji
   - jekyll-paginate
 
 # Site settings
 title: LYNGO
 description: > # this means to ignore newlines until "email:"
-   The best way to learn a new language!
+   Lyngo app is the the best way to learn a new language using video content that you already know and love!
 
-email: a-mail@mail.mail
+email: lyngoteam@gmail.com
 #blog logo
 logo: "/assets/images/lyngo-icon.png"
 # blog cover
@@ -45,12 +47,12 @@ social:
 #    share_title: ?t=
 #    share_link: "&amp;u="
 
-  - icon:	github
-    url:	https://github.com/khari1090
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
+  # - icon:	github
+  #   url:	https://github.com/khari1090
+  #   desc:	Fork me on github
+  #   share_url:
+  #   share_title:
+  #   share_link:
 
 #  - icon:	google-plus
 #    url:	https://google.com/???
