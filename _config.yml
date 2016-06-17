@@ -23,6 +23,8 @@ author_image: "/assets/images/author.jpg"
 paginate:	6
 paginate_path: "/blog/index.html"
 
+markdown: kramdown
+
 url: "http://myblog.***.***" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
