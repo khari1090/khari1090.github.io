@@ -62,7 +62,7 @@ body {
 .cards {
   text-align: left; }
   .cards .card {
-    height: 400px; }
+    height: 430px; }
   .cards .card-header {
     font-size: 1.5em; }
   @media screen and (max-width: 1200px) {
