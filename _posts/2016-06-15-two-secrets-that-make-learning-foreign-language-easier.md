@@ -5,10 +5,10 @@ description: It's difficult to learn a new language. These two secrets make that
 date: 2016-06-15
 categories: misc
 tags: regular
-comments: true
-image: /assets/article_images/2014-11-30-mediator_features/night-track.JPG
-image2: /assets/article_images/2014-11-30-mediator_features/night-track-mobile.JPG
+comments: false
+image: /assets/article_images/2016-06-15-two-secrets/puzzle.png
 ---
+
 
 # I know...
 
@@ -62,7 +62,7 @@ Because attempt 2.5 is really a continuation of attempt number 2 with a summer i
 
 **Relevance is huge and context is key.** Back in high school I never imagined I would have a French girlfriend or live in France so French was just another “thing” and not a tool. Now that I was in France as an au pair and was expected to take care of three unilingual French children, French became a necessity. This was the context that I needed. After a few months and a few meltdowns I had surpassed what I thought was linguistically possible for me and at the 6 month mark I was beginning to feel, dare I say, fluent.
 
->Living in Paris satisfied the need both the relevance *and* context.
+***Living in Paris satisfied the need both the relevance *and* context.***
 
 # Conclusion
 
