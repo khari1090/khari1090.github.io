@@ -38,8 +38,6 @@
 
         <!-- TITLE/CONTENT -->
 
-
-
         <section class="post-content">
 
           <div class="post-top" style="title-top">{{ page.title }}</h1></div>
@@ -67,6 +65,19 @@
 
           {{ content }}
 
+
+          <!-- next/prev start -->
+          <a href="{{ site.baseurl }}/blog"><h5 class="index-post"><span>All Posts</span></h5></a>
+          <div class="PageNavigation">
+          {% if page.previous.url %}
+            <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+          {% endif %}
+          {% if page.next.url %}
+            <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+          {% endif %}
+          </div>
+          <!-- next/prev end -->
+
           <!-- social icons start -->
           <section="top-meta">
           <h5 class="index-headline normal"><span>Follow Us On Snapchat, Please!</span></h5>
@@ -78,6 +89,10 @@
           </section>
           <!-- social icons end -->
 
+
+
+
+          <!-- disqus start -->
           </section>
 
           {% if page.comments %}
@@ -99,6 +114,7 @@
           </script>
           <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           {% endif %}
+          <!-- disqus end -->
 
         <div class="bottom-teaser cf">
           <div class="isLeft">
@@ -114,6 +130,7 @@
           {{/post}}
           <div class="isRight">
             <h5 class="index-post"><span>Created by</span></h5>
+
             <footer class="site-footer">
               <section class="poweredby">Created by True Thing LLC</section>
               <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to our feed.</span></a>
@@ -121,21 +138,22 @@
                 <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{site.author}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
               </div>
             </footer>
+
           </div>
         </div>
-
       </article>
     </main>
-    <div class="bottom-closer">
+
+    <!-- <div class="bottom-closer">
       <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover }})"{% endif %}>
         Image
       </div>
-
       <div class="inner">
-        <!-- <h1 class="blog-title">{{ site.title }}</h1>
-        <h2 class="blog-description">{{ site.description }}</h2> -->
+        <h1 class="blog-title">{{ site.title }}</h1>
+        <h2 class="blog-description">{{ site.description }}</h2>
         <a href="/" class="btn">Back to Overview</a>
-      </div>
+      </div> -->
+
     </div>
     {% include javascripts.html %}
   </body>

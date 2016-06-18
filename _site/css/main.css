@@ -766,6 +766,18 @@ body {
       padding: 10px 22px;
       box-shadow: 0 2px 0 #009948; }
 
+.PageNavigation {
+  font-size: 20px;
+  font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  overflow: hidden; }
+  .PageNavigation a {
+    margin: 1em; }
+  .PageNavigation .next {
+    text-align: right; }
+
 #disqus_thread {
   margin-top: 50px; }
 
