@@ -1,11 +1,11 @@
 ---
 layout: post
+comments: true
 title:  "The Two Secrets That Make Learning A Foreign Language Much Easier"
 description: It's difficult to learn a new language. These two secrets make that process easier. Learned through my experience learning French and considering learning German.
 date: 2016-06-15
 categories: misc
 tags: regular
-comments: false
 image: /assets/article_images/2016-06-15-two-secrets/puzzle.png
 ---
 
