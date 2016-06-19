@@ -14,8 +14,6 @@ Here's the thing. It's not like it's crazy difficult or anything. Well it is. Bu
 
 ## Why?
 
-Because you just can't. It's not a big deal but you just can't. I don't even mean to make you feel badly about yourself but learning a new language is unfortunately not for you. Other people can do it. I heard your little sister is pretty good at it. Unfortunately, you're just not. Genetics are a mysterious thing. Give up now and stop wasting your time. The end.
+Because you just can't. It's not a big deal but you just can't. I don't even mean to make you feel badly about yourself but learning a new language is unfortunately not for you. Other people can do it. I heard your younger sister is pretty good at it. Oh, and so is that one guy who can't seem to pronounce your name correctly at the office. Unfortunately, you're just not. Genetics are a mysterious thing. Give up now and stop wasting your time. The end.
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+***Just kidding. Of course you can ;)***
