@@ -6,6 +6,7 @@ description: It is possible to learn two languages at once using the chaining me
 date: 2016-06-19
 categories: misc
 tags: regular
+author: John Omar
 image: /assets/article_images/2016-06-19-learn-two-languages-same-time-chaining-method.md/chaining.png
 image2: /assets/article_images/2016-06-19-learn-two-languages-same-time-chaining-method.md/chaining-mobile.png
 ---

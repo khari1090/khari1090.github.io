@@ -18,8 +18,8 @@ logo: "/assets/images/lyngo-icon.png"
 cover: "/assets/images/lyngo-footer.png"
 
 name: 'Lyngo Team'
-author: 'Lyngo Team'
-author_image: "/assets/images/author.jpg"
+# author: 'Lyngo Team'
+# author_image: "/assets/images/khari.jpg"
 
 paginate:	6
 paginate_path: "/blog/index.html"
@@ -31,8 +31,19 @@ baseurl: ""
 #used to display twitter cards
 twitter_handle: '@kh4ri'
 
+authors:
+  khari:
+    name: 'Khari Slaughter'
+    display_name: 'Khari Slaughter'
+    author_image: "/assets/images/khari.jpg"
+  john:
+    name: 'John Omar'
+    display_name: 'John Omar'
+    author_image: "assets/images/john.jpg"
+
+
 #fill in disqus shortname to use disqus
-#disqus: disqus-shortname
+disqus: lyngoblog
 
 # social icons and sharing options
 social:

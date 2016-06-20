@@ -40,9 +40,9 @@ body {
 .top-section h1 {
   margin-bottom: 0 !important; }
 .top-section h2 {
-  color: #967800; }
+  color: #FFEC00; }
 .top-section p {
-  color: #967800; }
+  color: #005c85; }
 .top-section img {
   width: 30%; }
 
@@ -50,7 +50,7 @@ body {
   color: white;
   font-size: 3em; }
 .blog h2 {
-  color: #005c85; }
+  color: #732336; }
 .blog p {
   color: #333;
   font-size: 0.9em;
@@ -87,7 +87,7 @@ body {
 .cta h1 {
   margin-bottom: 0 !important; }
 .cta p {
-  color: #7d3027; }
+  color: #FFEC00; }
 
 #mailchimp {
   margin: 0 auto;
@@ -111,12 +111,12 @@ body {
   #mailchimp input.email {
     float: left; }
   #mailchimp input[type="submit"] {
-    box-shadow: 0 2px 0 #009948;
+    box-shadow: 0 2px 0 #DFB200;
     width: 30%;
     cursor: pointer;
-    background: #59CD90;
-    color: white;
+    background: #FFEC00;
+    color: #095F86;
     min-width: 95px;
     -webkit-appearance: none; }
     #mailchimp input[type="submit"]:hover {
-      background: #3EBB7A; }
+      background: #fbd335; }
