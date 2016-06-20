@@ -989,3 +989,7 @@ pre {
   .social-icons li {
     display: inline-block;
     padding-left: 0; }
+
+.giphy-embed {
+  width: 100%;
+  position: relative; }

@@ -106,7 +106,7 @@ body {
     font-family: "Varela Round", sans-serif;
     border-radius: 4px;
     width: 60%;
-    min-width: 200px;
+    min-width: 150px;
     padding: 3%; }
   #mailchimp input.email {
     float: left; }
@@ -116,7 +116,7 @@ body {
     cursor: pointer;
     background: #59CD90;
     color: white;
-    min-width: 100px;
+    min-width: 95px;
     -webkit-appearance: none; }
     #mailchimp input[type="submit"]:hover {
       background: #3EBB7A; }
