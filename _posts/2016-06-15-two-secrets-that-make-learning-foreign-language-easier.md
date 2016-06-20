@@ -7,8 +7,8 @@ date: 2016-06-15
 categories: misc
 tags: regular
 image: /assets/article_images/2016-06-15-two-secrets/puzzle.png
+image2: /assets/article_images/2016-06-15-two-secrets/puzzle-mobile.png
 ---
-
 
 # I know...
 
@@ -40,7 +40,7 @@ On the first day of class I made it clear to the teacher that I wanted to become
 
 ### More Relevance: The Opposite Sex
 
-<iframe src="//giphy.com/embed/9N0XEIDC88ePK" width="480" height="327" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/le-pepe-9N0XEIDC88ePK">via GIPHY</a></p>
+<iframe src="//giphy.com/embed/9N0XEIDC88ePK" width="100%" height="327" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/le-pepe-9N0XEIDC88ePK"></a></p>
 
 With that goal in mind, it was only somewhat difficult to stay motivated learning French while still in the United States. I needed a little bit of extra relevance to stay on track and boy did I find it. That year (like every year at my school) there was a French exchange student. That French exchange student eventually became my girlfriend.
 
@@ -54,7 +54,7 @@ I had my relevant reasons to learn French but I was still in need of the context
 
 ### Relevance and Context
 
-<iframe src="//giphy.com/embed/l41lNsmgu4aLV6YBq" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/paris-france-the-city-of-lights-l41lNsmgu4aLV6YBq">via GIPHY</a></p>
+<iframe src="//giphy.com/embed/l41lNsmgu4aLV6YBq" width="100%" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/paris-france-the-city-of-lights-l41lNsmgu4aLV6YBq"></a></p>
 
 **First of all, how does this *very real* attempt warrant only .5?**
 <br>
@@ -74,7 +74,7 @@ Learning a language broadens the mind and it is easiest when you have a reason. 
 
 I feel that learning French in the USA would have been really difficult for me unless I was very interested in watching French series or movies (I wasn’t - I didn’t even know of any good ones). You can expect future articles with foreign language media suggestions (movies, [youtube personalities](http://www.pocket-lint.com/news/131925-youtube-celebrities-are-a-thing-here-are-the-top-ones-and-tips-on-how-to-be-the-next-pewdiepie "Youtube Celebrities Are A Thing..."), and music).
 
-<iframe src="//giphy.com/embed/5ehp67vbvfG00" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/robert-elm-englund-5ehp67vbvfG00">via GIPHY</a></p>
+<iframe src="//giphy.com/embed/5ehp67vbvfG00" width="100%" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/robert-elm-englund-5ehp67vbvfG00"></a></p>
 
 
 ### Movies
@@ -106,7 +106,7 @@ If you are having trouble finding a community of people who are learning or nati
 
 ### What does it look like to have context but no relevance?
 
-<iframe src="//giphy.com/embed/EIGCnEVFQUQmY" width="480" height="264" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/boysnoize-berlin-mayday-EIGCnEVFQUQmY">via GIPHY</a></p>
+<iframe src="//giphy.com/embed/EIGCnEVFQUQmY" width="100%" height="264" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/boysnoize-berlin-mayday-EIGCnEVFQUQmY"></a></p>
 
 It looks a lot like me living in [Berlin](https://en.wikipedia.org/wiki/Berlin "Berlin, Germany") and not speaking more than a handful of German words. Speaking generally, Germans in Berlin (Berliners) consistently speak english fluently. My need for German has been very limited since I arrived here several months ago.
 

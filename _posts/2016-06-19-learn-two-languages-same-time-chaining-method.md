@@ -6,7 +6,8 @@ description: It is possible to learn two languages at once using the chaining me
 date: 2016-06-19
 categories: misc
 tags: regular
-image: /assets/images/chaining.png
+image: /assets/article_images/2016-06-19-learn-two-languages-same-time-chaining-method.md/chaining.png
+image2: /assets/article_images/2016-06-19-learn-two-languages-same-time-chaining-method.md/chaining-mobile.png
 ---
 
 #Background
@@ -35,7 +36,7 @@ Important! You need to be at around the B1 level in your L2 to effectively learn
 
 In other words, if my French was not good enough to read newspapers and have simple conversations, I’d get better at French using resources created for English speakers, and then use French to learn German.
 
-<iframe src="//giphy.com/embed/7uNL0F2Q9uPBu" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/drake-7uNL0F2Q9uPBu"></a></p>
+<iframe src="//giphy.com/embed/7uNL0F2Q9uPBu" width="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/drake-7uNL0F2Q9uPBu"></a></p>
 > "Got so many chains they call me Chaining Tatum" - [Drake - "Pop Style" (2016)](http://genius.com/Drake-pop-style-lyrics)
 
 #What You Need
@@ -51,7 +52,6 @@ There are tons of articles, books and apps that teach you how to learn a languag
 
 
 #Daily Routine
-
 
 Learning two languages at the same time sounds like an insurmountable amount of work, but I’ve found it to be quite feasible and fun when using the chaining method.
 
