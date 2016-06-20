@@ -35,7 +35,7 @@ body {
   .custom-section h2 {
     font-size: 2em; }
   .custom-section p {
-    font-size: 1.5em; }
+    font-size: 2em; }
 
 .top-section h1 {
   margin-bottom: 0 !important; }
@@ -76,17 +76,21 @@ body {
 .snapchat {
   width: 40%; }
   .snapchat h1 {
-    color: #020202;
-    font-size: 2em; }
+    font-size: 3em;
+    color: #020202; }
   .snapchat a {
     color: #020202;
     text-decoration: none; }
   .snapchat img {
     width: 50%; }
+  @media screen and (max-width: 700px) {
+    .snapchat {
+      width: 60%; } }
 
 .cta h1 {
   margin-bottom: 0 !important; }
 .cta p {
+  font-size: 2em;
   color: #FFEC00; }
 
 #mailchimp {
