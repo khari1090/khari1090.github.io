@@ -25,6 +25,10 @@ body {
     .homepage {
       font-size: 10px; } }
 
+#section0 {
+  background-size: auto;
+  background-image: image("/assets/images/blue-pattern.png"); }
+
 .custom-section {
   width: 80%;
   margin: 0 auto;
@@ -123,4 +127,4 @@ body {
     min-width: 95px;
     -webkit-appearance: none; }
     #mailchimp input[type="submit"]:hover {
-      background: #fbd335; }
+      background: #FFFE00; }
