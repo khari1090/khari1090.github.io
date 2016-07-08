@@ -1,0 +1,152 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  {% include header.html %}
+
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<link rel="stylesheet" type="text/css" href="/css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="/css/fullPage.css" />
+
+    <style>
+      #section0 {
+        background-image: url('/assets/images/blue-bg3.png');
+      }
+      #section3 {
+        background-image: url('/assets/images/blue-bg.png');
+      }
+      #section1 {
+        background-image: url('/assets/images/red-bg.png');
+      }
+
+    </style>
+
+  	<!--[if IE]>
+  		<script type="text/javascript">
+  			 var console = { log: function() {} };
+  		</script>
+  	<![endif]-->
+
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  	<!-- <script type="text/javascript" src="/assets/js/jquery.fullPage.js"></script> -->
+
+  	<script type="text/javascript">
+  		$(document).ready(function() {
+        			$('#fullpage').fullpage({
+        				sectionsColor: ['#00b3e6', '#FF604D', '#FFFE00', '#00b3e6', '#EAF0F4'],
+        				anchors: ['Welcome', 'blog', 'snapchat', 'cta', 'footer'],
+        				menu: '#menu',
+                slidesNavigation: true,
+                navigation: true,
+                paddingTop: 50
+                // showActiveTooltip: true,
+                // navigationTooltips: ['firstSlide', 'secondSlide', 'thiedSlide', 'fourthSlide']
+  			});
+  		});
+  	</script>
+
+  </head>
+
+  <body>
+
+
+
+  <!-- <ul id="menu">
+  	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+  	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+  	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+  	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+  </ul> -->
+
+<div class="homepage">
+  <div id="fullpage">
+
+  	<div class="section active" id="section0">
+      <div class="custom-section top-section">
+            <h1>LYNGO app</h1>
+    		    <h2>Learn a new language while watching your favorite shows. It's that simple.</h2>
+    		    <img src="/assets/images/lyngo-interface.png" alt="lyngo-browser"/>
+            <p>Get notified upon release!</p>
+            {% include subscribe.html %}
+      </div>
+  	</div>
+
+      	<div class="section" id="section1">
+  		    <div class="custom-section blog">
+    			<!-- <h1>LATEST BLOG POSTS</h1> -->
+          <h1>We also write language learning articles. <br> View more on our <a href="{{ site.baseurl }}/blog">blog</a>.</h1>
+
+        <!-- Cards Start -->
+
+          <div class="curstom-section cards">
+             {% for post in site.posts limit:3 %}
+
+             <div class="card">
+
+               <div class="card-image">
+                 <div>
+                   <a href="{{post.url}}"><img src="{% if post.image %}{{ post.image }}{% endif %}"></a>
+                 </div>
+               </div>
+
+               <div class="card-header">
+                 <a href="{{post.url}}" style="text-decoration: none; color: #333332">{{post.title}}</a>
+               </div>
+<!--
+               <div class="card-copy">
+                 <p>{{ post.excerpt | strip_html | truncatewords: 16 }}</p>
+               </div> -->
+
+               <div class="card-meta">
+                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+              </div>
+
+             </div>
+
+           {% endfor %}
+        </div>
+
+        <!-- Cards End -->
+
+  		</div>
+  	</div>
+
+    <div class="section" id="section2">
+      <div class="custom-section snapchat">
+          <h1>Follow us on snapchat for language learning hacks</h1>
+          <a href="https://www.snapchat.com/add/lyngoapp"><img src="/assets/images/snapchat-logo@2x.png" onmouseover="this.src='/assets/images/snpachat-logo-add@2x.png'" onmouseout="this.src='/assets/images/snapchat-logo@2x.png'"/></a>
+          <h2><a href="https://www.snapchat.com/add/lyngoapp">@lyngoapp</a></h2>
+      </div>
+    </div>
+
+  	<div class="section" id="section3">
+  		<div class="custom-section cta">
+  			<h1>COMING SOON</h1>
+        <p class="cta">Make sure you're notified when we launch!</p>
+        {% include subscribe.html %}
+  		</div>
+  	</div>
+
+    <div class="section fp-auto-height">
+      <div>
+      {% include footer.html %}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- content end -->
+
+    {% include javascripts.html %}
+
+  </body>
+
+</html>

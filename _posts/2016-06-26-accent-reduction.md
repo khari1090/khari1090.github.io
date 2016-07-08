@@ -109,7 +109,8 @@ The moral of the story: English is tricky. Don’t feel bad about your abilities
 ###2. Memorization and Repetition
 
 Memorization and repetition of phrases that you hear in movies and television shows. Sure maybe it’s annoying to rewind and play again and again but it certainly does help. Listen carefully and imitate. It’s without a doubt a parrot method and you can do it anytime you’ve got an audio recording handy.
-Still not sure if you’re getting it right? Record yourself and listen to yourself. If you can’t hear it coming out of your mouth you can probably hear the mistakes in an audio recording. I know this is hard to do - listening to your own flaws but it’s a sure way to improve. Listen to the original, then you, then the original, then you. re-record/repeat.
+
+Still not sure if you’re getting it right? Record yourself and listen to yourself. If you can’t hear it coming out of your mouth you can probably hear the mistakes in an audio recording. I know this is hard to do - listening to your own flaws but it’s a sure way to improve. Listen to the original, then you, then the original, then you. Re-record/repeat.
 
 ###3. Practice
 If you have access to a native speaker, ask them to be extremely picky about your pronunciation and language skills. Promise them that you will not take their criticism personally. Assure them that after mistake number 34 you are not going to start crying, storm out, and end the friendship. When you’ve had enough you can always ask them to stop.

@@ -2,6 +2,7 @@
  * Syntax highlighting styles
  */
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
 .highlight {
   background: #fff; }
   .highlight .c {
@@ -180,7 +181,7 @@ body {
 
 .blog-title {
   margin: 0 auto;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Quicksand", "Varela Round", sans-serif;
   padding: 84px 16px 8px;
   font-size: 50px;
   text-align: center;
@@ -760,7 +761,7 @@ body {
       font-size: 18px;
       font-weight: 600;
       letter-spacing: 1px;
-      font-family: "Varela Round", sans-serif;
+      font-family: "Quicksand", "Varela Round", sans-serif;
       text-decoration: none;
       cursor: pointer;
       background: #59CD90;
@@ -885,41 +886,44 @@ pre {
   padding: 0.75em 0.75em;
   top: -50; }
 
-.nav-down {
-  transition: 0.2s ease-in-out;
-  background-color: #fbfcfd;
+.nav {
   overflow: hidden;
   opacity: 0.9;
-  position: fixed;
-  z-index: 2;
   width: 100%;
-  margin: 0 auto;
-  padding-right: 30%;
-  top: 0;
+  padding-top: 30px;
   height: 70px; }
 
 .nav-container {
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
+  top: 20px;
+  justify-content: space-around;
   width: 90%; }
   .nav-container a {
     margin-top: auto;
     margin-bottom: auto;
-    font-family: "Varela Round", sans-serif;
+    margin-left: 5%;
+    font-family: "Quicksand", "Varela Round", sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
-    color: #333332;
-    padding: 5px; }
+    color: #368BFF; }
   .nav-container img {
     padding-top: 10px; }
-
-.nav-up {
-  transition: 0.1s ease-in-out;
-  top: -70px;
-  opacity: 0; }
-
+  .nav-container button {
+    background-color: #368BFF;
+    border-style: none;
+    border-radius: 3px;
+    box-shadow: 0px 3px 0px #FFEC00;
+    margin-left: 5%; }
+    .nav-container button a {
+      color: white;
+      padding: 10px; }
+      .nav-container button a:hover {
+        color: #FFEC00; }
+@media(max-width: 500px) {
+  .nav-container button {
+    display: none; } }
 .post-top {
   font-size: 60px;
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
