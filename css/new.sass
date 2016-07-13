@@ -29,6 +29,7 @@ $font-quick: 'Quicksand', 'Varela Round', sans-serif
 // body
 body
   width: 100%
+  background-color: white
   font-family: $font-quick
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
@@ -39,13 +40,11 @@ body
   font-feature-settings: "liga", "dlig"
 
 .landing
-  background-image: url("/assets/images/bg pattern nofill.png")
-  background-size: contain
   font-size: 14px
   margin: 0 auto
   h1
-    font-size: 3em
-    color: #368BFF
+    font-size: 2.5em
+    color: white
   h2
     font-size: 2em
     color: #368BFF
@@ -53,18 +52,21 @@ body
     font-size: 1.2em
     font-family: $font-sans
     color: gray
+    letter-spacing: 0.5px
   @media screen and (max-width: 950px)
-    font-size: 12px
-    .feature-container
-      width: 50%
-      flex-direction: column
-      align-items: center
+    font-size: 13px
     .container
       flex-direction: column-reverse
       align-items: center
+      text-align: center
+    .row1, .row2
+      -webkit-flex-flow: row wrap
+      justify-content: space-around
       div
         flex-direction: column
         text-align: center
+        -webkit-flex-flow: row wrap
+        justify-content: space-around
       h2
         font-size: 2em
         padding: 5%
@@ -74,452 +76,120 @@ body
         text-align: center
       button
         margin: 0 auto
+        padding: 4%
         a
           margin: 0 auto
-  @media screen and (max-width: 700px)
-    font-size: 10px
 
 
   .hero
     margin: 0 auto
     padding-top: 5%
     padding-bottom: 10%
+    background-image: url("/assets/images/bg-pattern-light.svg")
+    background-color: #368BFF
+    background-size: contain
 
     .container
       display: flex
-      width: 70%
+      width: 80%
       margin: 0 auto
+      align-content: center
       button
         font-family: $font-quick
         font-weight: 700
         padding: 4%
-        background-color: #368BFF
+        background-color: #FFEC00
         border-style: none
         border-radius: 3px
-        box-shadow: 0px 3px 0px #FFEC00
         a
-          color: white
-          padding: 10px
+          color: #003276
           text-decoration: none
           font-size: 2em
           &:hover
-            color: #FFEC00
+            color: #368BFF
 
-  .intro
+  .info
     background-color: white
-    padding-top: 5%
-    padding-bottom: 5%
-
-    .container
-      display: flex
-      width: 60%
-      margin: 0 auto
-      div
-        text-align: center
-        padding: 5%
-      p
-        padding-bottom: 5%
-        margin: 0 auto
-        width: 70%
-
-
-  .how-it-works
-    background-color: #EAF0F4
-    padding-top: 5%
-    padding-bottom: 5%
+    width: 80%
     margin: 0 auto
-
-    .container
-      padding: 2%
-      display: flex
-      flex-direction: column
-      justify-content: center
-      width: 60%
-      margin: 0 auto
-      div
-        display: flex
-        margin: 0 auto
-        padding: 5%
-      .text
-        display: inline-block
-      h1
-        margin: 0 auto
-        padding-bottom: 5%
-        font-size: 3em
-      h2
-        margin: 0 auto
-        font-size: 2em
-    .final-how
-      width: 40%
-      margin: 0 auto
-      text-align: center
-
-  .testimonial
-    background-color: white
-    // background-image: url("/assets/images/bg pattern nofill.png")
-    // background-size: contain
-    padding: 10%
-    h3
-      font-size: 3em
-      font-weight: 500
-      text-align: center
-      color: #368BFF
-
-
-  .skills
-    background-color: #EAF0F4
-    padding-top: 10%
-    padding-bottom: 10%
-
-    .feature-container
-      display: flex
-      width: 60%
-      padding: 2%
-      margin: 0 auto
-      p
-        width: 80%
-        margin: 0 auto
-        padding-bottom: 5%
-      div
-        margin: auto
-        text-align: center
-      img
-        padding-top: 5%
-        align-items: baseline
-
-  .final-cta
-    background-image: url("/assets/images/bg pattern nofill.png")
-    background-size: contain
-    background-color: white
-    margin: 0 auto
-    padding-top: 10%
-    padding-bottom: 10%
-    .container
-      display: flex
-      width: 70%
-      margin: 0 auto
-    img
-      float: right
-      align-content: center
     button
       font-family: $font-quick
       font-weight: 700
-      padding: 4%
-      background-color: #368BFF
+      padding: 2%
+      background-color: #FFEC00
       border-style: none
       border-radius: 3px
-      box-shadow: 0px 3px 0px #FFEC00
+      display: table
+      margin: 5% auto
       a
-        color: white
-        padding: 10px
+        color: #003276
         text-decoration: none
         font-size: 2em
         &:hover
-          color: #FFEC00
+          color: #368BFF
+
+  .intro
+    h1
+      color: #368BFF
+      text-align: center
+      padding-top: 5%
+    p
+      text-align: center
+    img
+      padding-top: 5%
+
+  .row1, .row2
+    padding-top: 5%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    align-content: space-between
+    div
+      width: 100%
+      padding-left: 4%
+      padding-right: 4%
+    h1
+      border-bottom: 1px solid #368BFF
+    h2
+      font-size: 1.5em
+
+  .testimonial
+    width: 80%
+    margin: 0 auto
+    h1
+      color: #368BFF
+      font-weight: 500
+      border-top: 1px solid #EAF0F4
+      text-align: center
+      padding-top: 15%
+      padding-bottom: 10%
 
 
-
-
-
-// ANIMATION
-
-@keyframes intro1-stars1
-  0%,100%
-    transform: translate(149px,54px)
-  50%
-    transform: translate(149px,30px)
-
-@keyframes intro1-cloud1
-  0%,100%
-    transform: translate(0px,55px)
-  50%
-    transform: translate(20px, 55px)
-
-@keyframes intro1-cloud2
-  0%,100%
-    transform: translate(332px,129px)
-  50%
-    transform: translate(320px,129px)
-
-#intro1-stars1
-  animation-name: intro1-stars1
-  animation-duration: 5s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#intro1-cloud1
-  animation-name: intro1-cloud1
-  animation-duration: 4s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#intro1-cloud2
-  animation-name: intro1-cloud2
-  animation-duration: 4s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-@keyframes intro2-heart
-  0%,100%
-    transform: translate(327px,155px) scale(1)
-  15%
-    transform: translate(327px,155px) scale(1.1)
-
-#intro2-heart
-  animation-name: intro2-heart
-  animation-duration: 2s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-@keyframes how1-eye
-  0%,100%
-    transform: translate(487px,166px)
-  15%
-    transform: translate(477px,166px)
-
-@keyframes how1-mag
-  0%,100%
-    transform: translate(427px,104px)
-  15%
-    transform: translate(427px,104px)
-
-#how1-eye
-  animation-name: how1-eye
-  animation-duration: 2s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#how1-mag
-  animation-name: how1-mag
-  animation-duration: 2s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-@keyframes how2-arrow
-  0%,100%
-    transform: translate(309px,5px)
-  15%
-    transform: translate(309px,20px)
-
-#how2-arrow
-  animation-name: how2-arrow
-  animation-duration: 1s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-@keyframes how3-camera
-  0%,100%
-    transform: translate(315px,175px)
-  40%
-    transform: translate(315px,160px)
-
-@keyframes how3-heart
-  0%,100%
-    transform: translate(494px,73px) scale(1)
-  15%
-    transform: translate(494px,73px) scale(1.5)
-
-@keyframes how3-spin
-  0%,100%
-    transform: translate(726px,211px) rotate(0deg)
-  40%
-    transform: translate(726px,211px) rotate(120deg)
-
-@keyframes how3-vid
-  0%,100%
-    transform: translate(787px,237px)
-  40%
-    transform: translate(787px,247px)
-
-@keyframes how3-speech
-  0%,100%
-    transform: translate(680px,85px)
-  50%
-    transform: translate(685px,85px)
-
-@keyframes how3-star
-  0%,100%
-    transform: translate(391px,57px)
-  50%
-    transform: translate(391px,50px)
-
-@keyframes how3-wave
-  0%,100%
-    transform: translate(224px,283px)
-  50%
-    transform: translate(244px,283px)
-
-#how3-camera
-  animation-name: how3-camera
-  animation-duration: 4s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#how3-heart
-  animation-name: how3-heart
-  animation-duration: 2s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#how3-spin
-  animation-name: how3-spin
-  animation-duration: 2s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#how3-vid
-  animation-name: how3-vid
-  animation-duration: 2s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#how3-speech
-  animation-name: how3-speech
-  animation-duration: 4s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#how3-star
-  animation-name: how3-star
-  animation-duration: 4s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#how3-wave
-  animation-name: how3-wave
-  animation-duration: 4s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-@keyframes feature1-a
-  0%,100%
-    transform: translate(57px,385px)
-  50%
-    transform: translate(57px,375px)
-
-@keyframes feature1-c
-  0%,100%
-    transform: translate(357px,353px)
-  50%
-    transform: translate(357px,373px)
-
-@keyframes feature1-stars
-  0%,100%
-    transform: translate(67px,68px)
-  50%
-    transform: translate(77px,78px)
-
-#feature1-a
-  animation-name: feature1-a
-  animation-duration: 4s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#feature1-c
-  animation-name: feature1-c
-  animation-duration: 4s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#feature1-stars
-  animation-name: feature1-stars
-  animation-duration: 2s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-@keyframes feature2-stars
-  0%,100%
-    transform: translate(176px,59px) scale(1)
-  50%
-    transform: translate(176px,59px) scale(1.1)
-
-@keyframes feature2-mouth
-  0%,100%
-    transform: translate(110px,407px) scaleY(1)
-  50%
-    transform: translate(110px,407px) scaleY(1.1)
-
-#feature2-stars
-  animation-name: feature2-stars
-  animation-duration: 4s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-#feature2-mouth
-  animation-name: feature2-mouth
-  animation-duration: 1s
-  animation-timing-function: ease-in-out
-  animation-iteration-count: infinite
-
-
-@keyframes feature3-brain
-  0%,100%
-    transform: translate(196px,84px)
-  50%
-    transform: translate(196px,94px)
-
-@keyframes feature3-eyebrows
-  0%,100%
-    transform: translate(184px,376px)
-  50%
-    transform: translate(184px,372px)
-
-#feature3-brain
-  animation-name: feature3-brain
-  animation-duration: 3.5s
-  animation-timing-function: ease-out
-  animation-iteration-count: infinite
-
-#feature3-eyebrows
-  animation-name: feature3-eyebrows
-  animation-duration: 1s
-  animation-timing-function: ease-out
-  animation-iteration-count: infinite
-
-@keyframes feature4-cloud1
-  0%,100%
-    transform: translate(0px,92px)
-  50%
-    transform: translate(12px,92px)
-
-@keyframes feature4-cloud2
-  0%,100%
-    transform: translate(156px,210px)
-  50%
-    transform: translate(136px,210px)
-
-@keyframes feature4-stars1
-  0%,100%
-    transform: translate(122px,252px)
-  50%
-    transform: translate(122px,262px)
-
-@keyframes feature4-stars2
-  0%,100%
-    transform: translate(122px,237px)
-  50%
-    transform: translate(122px,257px)
-
-#feature4-cloud1
-  animation-name: feature4-cloud1
-  animation-duration: 3s
-  animation-timing-function: ease-out
-  animation-iteration-count: infinite
-
-#feature4-cloud2
-  animation-name: feature4-cloud2
-  animation-duration: 3s
-  animation-timing-function: ease-out
-  animation-iteration-count: infinite
-
-#feature4-stars1
-  animation-name: feature4-stars1
-  animation-duration: 1s
-  animation-timing-function: ease-out
-  animation-iteration-count: infinite
-
-#feature4-stars2
-  animation-name: feature4-stars2
-  animation-duration: 1s
-  animation-timing-function: ease-out
-  animation-iteration-count: infinite
+  .final-cta
+    background-image: url("/assets/images/bg-pattern-light.svg")
+    background-size: contain
+    background-color: #368BFF
+    margin: 0 auto
+    padding-top: 5%
+    h1
+      text-align: center
+    img
+      width: 50%
+      bottom: 0
+      display: table
+      margin: 0 auto
+    button
+      font-family: $font-quick
+      font-weight: 700
+      padding: 2%
+      background-color: #FFEC00
+      border-style: none
+      border-radius: 3px
+      display: table
+      margin: 5% auto
+      a
+        color: #003276
+        text-decoration: none
+        font-size: 2em
+        &:hover
+          color: #368BFF
