@@ -921,7 +921,8 @@ pre {
       color: #003276;
       padding: 10px; }
       .nav-container button a:hover {
-        color: #FFEC00; }
+        color: #368BFF;
+        transition: all 0.2s ease; }
 @media(max-width: 500px) {
   .nav-container button {
     display: none; } }
