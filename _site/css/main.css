@@ -916,14 +916,15 @@ pre {
     background-color: #FFEC00;
     border-style: none;
     border-radius: 3px;
-    margin-left: 5%; }
+    margin-left: 5%;
+    white-space: nowrap; }
     .nav-container button a {
       color: #003276;
       padding: 10px; }
       .nav-container button a:hover {
         color: #368BFF;
         transition: all 0.2s ease; }
-@media(max-width: 500px) {
+@media(max-width: 600px) {
   .nav-container button {
     display: none; } }
 .post-top {
