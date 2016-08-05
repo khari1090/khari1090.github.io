@@ -2,9 +2,13 @@
 ---
 <!DOCTYPE html>
 <html>
+
+  <head>
   {% include head.html %}
+  </head>
+
   <body itemscope itemtype="http://schema.org/Article">
-    {% include header.html %}
+    <!-- {% include header.html %} -->
     <main class="content" role="main">
       <article class="post">
         {% if page.image %}
@@ -91,7 +95,6 @@
 
 
 
-
           <!-- disqus start -->
           </section>
 
@@ -156,5 +159,6 @@
 
     </div>
     {% include javascripts.html %}
+
   </body>
 </html>

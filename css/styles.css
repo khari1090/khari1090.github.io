@@ -87,7 +87,7 @@ a:hover {
   user-select: none;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 45em) {
   .js .nav-collapse {
     position: relative;
   }
@@ -142,7 +142,7 @@ a:hover {
   opacity: 1;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 45em) {
   .mask {
     display: none !important;
     opacity: 0 !important;
@@ -175,7 +175,7 @@ a:hover {
   float: left;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 45em) {
   .nav-collapse {
     float: right;
     width: auto;
@@ -187,7 +187,7 @@ a:hover {
   width: 100%;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 45em) {
   .nav-collapse li {
     width: auto;
   }
@@ -209,7 +209,7 @@ a:hover {
   background: #b73214;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 45em) {
   .nav-collapse a {
     border-left: 1px solid white;
     padding: 1.02em 2em;
@@ -225,7 +225,7 @@ a:hover {
   padding-left: 2em;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 45em) {
   .nav-collapse ul ul a {
     display: none;
   }
