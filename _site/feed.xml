@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LYNGO</title>
-    <description>Lyngo app is the the best way to learn a new language using video content that you already know and love!
+    <description>Lyngo App is the the best way to learn a new language using video content that you already know and love!
 </description>
     <link>http://myblog.***.***/</link>
     <atom:link href="http://myblog.***.***/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 06 Aug 2016 15:30:27 +0200</pubDate>
-    <lastBuildDate>Sat, 06 Aug 2016 15:30:27 +0200</lastBuildDate>
+    <pubDate>Sat, 06 Aug 2016 18:48:25 +0200</pubDate>
+    <lastBuildDate>Sat, 06 Aug 2016 18:48:25 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>

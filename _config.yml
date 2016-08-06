@@ -9,7 +9,7 @@ gems:
 # Site settings
 title: LYNGO
 description: > # this means to ignore newlines until "email:"
-   Lyngo app is the the best way to learn a new language using video content that you already know and love!
+   Lyngo App is the the best way to learn a new language using video content that you already know and love!
 
 email: lyngoteam@gmail.com
 #blog logo
