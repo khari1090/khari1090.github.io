@@ -7,6 +7,10 @@ layout: default
 
 {% include head.html %}
 
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
 <!-- <div class="teaserimage">
     <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
         Teaser Image
@@ -57,7 +61,7 @@ layout: default
 
     <!-- Cards Start -->
 
-    <h5 class="index-headline normal"><span>Latest</span></h5>
+    <!-- <h5 class="index-headline normal"><span>Latest</span></h5> -->
 
     <div class="cards">
        {% for post in paginator.posts %}
@@ -104,10 +108,6 @@ layout: default
       {% endif %}
     </nav>
 
-    <script src="assets/js/fastclick.js"></script>
-    <script src="assets/js/scroll.js"></script>
-    <script src="assets/js/fixed-responsive-nav.js"></script>
-    <script src="assets/js/responsive-nav.js"></script>
 
     <!-- {{!! After all the posts, we have the previous/next pagination links }}
     {{pagination}} -->
