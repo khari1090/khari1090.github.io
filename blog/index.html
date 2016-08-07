@@ -6,16 +6,10 @@ layout: default
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/new.sass">
-  <link rel="stylesheet" type="text/css" href="css/main.sass">
+  <link rel="stylesheet" type="text/css" href="/css/nav.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.sass">
 </head>
 
-<!-- <div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
-        Teaser Image
-    </div>
-</div> -->
 
 <header class="blog-header">
 
@@ -50,11 +44,11 @@ layout: default
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span> -->
-            <!-- </div>
-          </div> -->
-        <!-- </article> -->
-      <!-- {% endfor %}
+             <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
     </div>
     {% endif %} -->
 
@@ -89,6 +83,7 @@ layout: default
        </div>
 
        {% endfor %}
+
      </div>
 
 

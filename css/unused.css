@@ -13,7 +13,7 @@
  *
  * ============================================= */
 
-body, div,
+/*body, div,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
 fieldset, form, label, legend, th, td,
@@ -22,7 +22,7 @@ summary, hgroup {
   margin: 0;
   padding: 0;
   border: 0;
-}
+}*/
 
 a:active,
 a:hover {
